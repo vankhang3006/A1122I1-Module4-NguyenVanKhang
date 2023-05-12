@@ -71,4 +71,17 @@ select * from Subject where Credit between 3 and 5;
 update Student set ClassID = 2 where StudentName = 'Hung';
 /*Câu 5: Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.*/
 select st.StudentName, sj.SubName, m.Mark from Student st, Subject sj, Mark m 
-where st.StudentID = m.StudentID and sj.SubID = m.SubID order by m.Mark desc, st.StudentName asc;
+where st.StudentId = m.StudentId and sj.SubId = m.SubId order by m.Mark desc, st.StudentName asc;
+
+/*Các hàm thông dụng trong SQL*/
+/*Câu 1: Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất.*/
+select * from Subject where Credit = (select max(Credit) from Subject);
+/*Câu 2: Hiển thị các thông tin môn học có điểm thi lớn nhất.*/
+select s.SubId, s.SubName, m.Mark as Diem_thi_lon_nhat
+from Subject s, Mark m
+where s.SubId = m.SubId and m.Mark = (select max(Mark) from Mark);
+/*Câu 3: Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần*/
+select st.StudentName, st.Address, st.Phone, st.Status, st.ClassId, avg(m.Mark) as diem_trung_binh
+from Student st, Mark m
+where st.StudentId = m.StudentId 
+group by st.StudentId order by avg(m.Mark) desc
