@@ -194,4 +194,96 @@ values	(5,	2, 4),
 		(1,	1, 3),
 		(2,	1, 2),
 		(2,	12,	2);
-
+-- 2.	Hiển thị thông tin của tất cả nhân viên có trong hệ thống có tên bắt đầu là một trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 kí tự.
+select * from nhan_vien where ho_ten like 'h%' or ho_ten like 't%' or ho_ten like 'k%' and char_length(ho_ten) <=15;
+-- 3.	Hiển thị thông tin của tất cả khách hàng có độ tuổi từ 18 đến 50 tuổi và có địa chỉ ở “Đà Nẵng” hoặc “Quảng Trị”.
+select * from khach_hang where (timestampdiff(year, ngay_sinh, curdate()) between 18 and 50) and (dia_chi like '%Đà Nẵng' or dia_chi like '%Quảng Trị');
+-- 4.	Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng của khách hàng. Chỉ đếm những khách hàng nào có Tên loại khách hàng là “Diamond”.
+select kh.ma_khach_hang, kh.ho_ten, count(hd.ma_khach_hang) as so_lan_dat_phong from khach_hang kh, hop_dong hd, loai_khach lk 
+where kh.ma_khach_hang = hd.ma_khach_hang and kh.ma_loai_khach = lk.ma_loai_khach and lk.ten_loai_khach = 'Diamond'
+group by kh.ma_khach_hang order by count(hd.ma_khach_hang) asc;
+-- 5.	Hiển thị ma_khach_hang, ho_ten, ten_loai_khach, ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, tong_tien (Với tổng tiền được tính theo công thức như sau: Chi Phí Thuê + Số Lượng * Giá, với Số Lượng và Giá là từ bảng dich_vu_di_kem, hop_dong_chi_tiet) cho tất cả các khách hàng đã từng đặt phòng. (những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+SELECT kh.ma_khach_hang, kh.ho_ten, kh.ho_ten, hd.ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, IFNULL(t.totalCPT + IFNULL(SUM(hdct.so_luong * dvdk.gia), 0),0) total FROM khach_hang kh
+LEFT JOIN hop_dong hd USING(ma_khach_hang)
+LEFT JOIN hop_dong_chi_tiet hdct USING(ma_hop_dong)
+LEFT JOIN dich_vu_di_kem dvdk USING(ma_dich_vu_di_kem)
+LEFT JOIN dich_vu dv USING(ma_dich_vu)
+LEFT JOIN
+(
+SELECT hd.ma_hop_dong ,IFNULL(SUM(dv.chi_phi_thue), 0)  totalCPT FROM khach_hang kh
+LEFT JOIN hop_dong hd USING(ma_khach_hang)
+LEFT JOIN dich_vu dv USING(ma_dich_vu)
+GROUP BY kh.ma_khach_hang
+) t USING(ma_hop_dong)
+GROUP BY kh.ma_khach_hang ;
+-- 6.	Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ chưa từng được khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
+SELECT dv.ma_dich_vu, dv.ten_dich_vu, dv.dien_tich, dv.chi_phi_thue, ldv.ten_loai_dich_vu
+FROM dich_vu dv
+LEFT JOIN loai_dich_vu ldv ON dv.ma_loai_dich_vu = ldv.ma_loai_dich_vu
+WHERE dv.ma_dich_vu NOT IN (
+    SELECT hd.ma_dich_vu
+    FROM hop_dong hd
+    WHERE hd.ngay_lam_hop_dong >= '2021-01-01' AND hd.ngay_lam_hop_dong <= '2021-03-31'
+)
+ORDER BY dv.ma_dich_vu ASC;
+-- 7.	Hiển thị thông tin ma_dich_vu, ten_dich_vu, dien_tich, so_nguoi_toi_da, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ đã từng được khách hàng đặt phòng trong năm 2020 nhưng chưa từng được khách hàng đặt phòng trong năm 2021.
+SELECT dv.ma_dich_vu, dv.ten_dich_vu, dv.dien_tich, dv.so_nguoi_toi_da, dv.chi_phi_thue, ldv.ten_loai_dich_vu
+FROM dich_vu dv
+LEFT JOIN loai_dich_vu ldv ON dv.ma_loai_dich_vu = ldv.ma_loai_dich_vu
+WHERE dv.ma_dich_vu IN (
+    SELECT hd.ma_dich_vu FROM hop_dong hd
+    WHERE hd.ngay_lam_hop_dong >= '2020-01-01' AND hd.ngay_lam_hop_dong <= '2020-12-31'
+)
+AND dv.ma_dich_vu NOT IN (
+    SELECT hd.ma_dich_vu FROM hop_dong hd
+    WHERE hd.ngay_lam_hop_dong >= '2021-01-01' AND hd.ngay_lam_hop_dong <= '2021-12-31'
+)
+ORDER BY dv.ma_dich_vu ASC;
+-- 8.	Hiển thị thông tin ho_ten khách hàng có trong hệ thống, với yêu cầu ho_ten không trùng nhau.
+select ho_ten from khach_hang group by ho_ten;
+-- 9.	Thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi tháng trong năm 2021 thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
+SELECT MONTH(ngay_lam_hop_dong) AS thang, COUNT(DISTINCT ma_khach_hang) as so_luong_khach_hang
+FROM hop_dong
+WHERE YEAR(ngay_lam_hop_dong) = 2021
+GROUP BY MONTH(ngay_lam_hop_dong)
+ORDER BY thang ASC;
+-- 10.	Hiển thị thông tin tương ứng với từng hợp đồng thì đã sử dụng bao nhiêu dịch vụ đi kèm. Kết quả hiển thị bao gồm ma_hop_dong, ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc, so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem).
+SELECT hd.ma_hop_dong, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, hd.tien_dat_coc, SUM(hdct.so_luong) AS so_luong_dich_vu_di_kem
+FROM hop_dong hd
+JOIN hop_dong_chi_tiet hdct on hd.ma_hop_dong = hdct.ma_hop_dong
+GROUP BY hdct.ma_hop_dong
+ORDER BY hd.ma_hop_dong asc;
+-- 11.	Hiển thị thông tin các dịch vụ đi kèm đã được sử dụng bởi những khách hàng có ten_loai_khach là “Diamond” và có dia_chi ở “Vinh” hoặc “Quảng Ngãi”.
+SELECT DISTINCT dich_vu_di_kem.ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem
+FROM dich_vu_di_kem
+INNER JOIN hop_dong_chi_tiet ON dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+INNER JOIN hop_dong ON hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+INNER JOIN khach_hang ON hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+INNER JOIN loai_khach ON khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
+WHERE loai_khach.ten_loai_khach = 'Diamond' 
+    AND (khach_hang.dia_chi LIKE '%Vinh%' OR khach_hang.dia_chi LIKE '%Quảng Ngãi%');
+-- 12.	Hiển thị thông tin ma_hop_dong, ho_ten (nhân viên), ho_ten (khách hàng), so_dien_thoai (khách hàng), ten_dich_vu, so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem), tien_dat_coc của tất cả các dịch vụ đã từng được khách hàng đặt vào 3 tháng cuối năm 2020 nhưng chưa từng được khách hàng đặt vào 6 tháng đầu năm 2021.
+SELECT 
+    hd.ma_hop_dong, 
+    nv.ho_ten AS ho_ten_nhan_vien, 
+    kh.ho_ten AS ho_ten_khach_hang, 
+    kh.so_dien_thoai AS SDT_khach_hang,
+    dv.ma_dich_vu,
+    dv.ten_dich_vu,
+    SUM(hdct.so_luong) AS so_luong_dich_vu_di_kem,
+    hd.tien_dat_coc
+FROM hop_dong hd
+INNER JOIN nhan_vien nv ON hd.ma_nhan_vien = nv.ma_nhan_vien
+INNER JOIN khach_hang kh ON hd.ma_khach_hang = kh.ma_khach_hang
+INNER JOIN hop_dong_chi_tiet hdct ON hd.ma_hop_dong = hdct.ma_hop_dong
+INNER JOIN dich_vu_di_kem dvdk ON hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+INNER JOIN dich_vu dv ON hd.ma_dich_vu = dv.ma_dich_vu
+WHERE 
+    MONTH(hd.ngay_ket_thuc) BETWEEN 10 AND 12 AND YEAR(hd.ngay_ket_thuc) = 2020 AND
+    hd.ma_hop_dong NOT IN (
+        SELECT hd.ma_hop_dong 
+        FROM hop_dong hd
+        WHERE MONTH(hd.ngay_ket_thuc) < 6 AND YEAR(hd.ngay_ket_thuc) = 2021
+    )
+GROUP BY hd.ma_hop_dong;
