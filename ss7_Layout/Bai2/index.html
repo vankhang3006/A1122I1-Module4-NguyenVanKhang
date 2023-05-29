@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook - Simple design</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .header {
+      width: 98%;
+      overflow: hidden;
+      background-color: #3b5998;
+      height: 60px;
+      display: flex;
+      position: fixed;
+      align-items: center;
+      padding: 0 20px;
+      color: #fff;
+    }
+
+    .header__logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .header__search {
+      flex-grow: 1;
+      position: relative;
+    }
+
+    .header__search input[type="text"] {
+      background-color: #f2f2f2;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 30px;
+      width: 100%;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .header__search i {
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      color: #999;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: #f5f5f5;
+      width: 250px;
+      height: 100%;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .sidebar__item {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .sidebar__item.active {
+      background-color: #4a6ea9;
+      color: #fff;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .main-content__post {
+      margin-bottom: 20px;
+      padding: 50px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-content__post__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .main-content__post__header img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .main-content__post__header p {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .main-content__post__text {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .main-content__post__image {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <div class="header__logo">Facebook</div>
+  <div class="header__search">
+    <input type="text" placeholder="Tìm kiếm trên Facebook">
+    <i class="fa fa-search"></i>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <div class="sidebar__item active">Bảng feed (Gần đây nhất)</div>
+  <div class="sidebar__item">Messenger</div>
+  <div class="sidebar__item">Nhóm</div>
+  <div class="sidebar__item">Thông báo</div>
+</div>
+
+<!-- Main content -->
+<div class="main-content">
+  <div class="main-content__post">
+    <div class="main-content__post__header">
+      <img src="https://picsum.photos/id/237/40/40" alt="avatar">
+      <p>Khang Nguyễn</p>
+    </div>
+    <div class="main-content__post__text">Bến cảng và con chim.</div>
+    <img src="https://picsum.photos/id/50/800/400" alt="post image" class="main-content__post__image">
+    <a href="#">Thích</a>
+    <a href="#">Bình luận</a>
+  </div>
+</div>
+</body>
+</html>
