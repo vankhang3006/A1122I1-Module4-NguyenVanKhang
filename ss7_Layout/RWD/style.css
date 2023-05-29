@@ -3,11 +3,12 @@ body{
 }
 
 #menu{
+    align-items: center;
     height: 30px;
+    width: 100%;
     padding:0;
     margin:0;
     background-color: #232C38;
-    border: 1px solid #CDCDCD;
 }
 
 #menu ul, #menu li{
@@ -56,7 +57,11 @@ body{
 
     align-items: center;
     max-width: 18px;
-    height: auto;
+    height: 14px;
+}
+
+.lienket a{
+    text-decoration: none
 }
 
 #menu ul li:hover ul{
@@ -81,10 +86,28 @@ nav{
     margin: 0;
 }
 article {
-    padding: 10px;
+    padding-left: 10px;
     height: 600px;
     width: 60%;
     float: left;
+}
+aside{
+    width: 19%;
+    height: 600px;
+    float: left;
+}
+
+aside ul li{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AAAAAA;
+    margin: 20px;
+}
+nav ul li {
+    padding: 10px;
 }
 ul{
     list-style: none ;
