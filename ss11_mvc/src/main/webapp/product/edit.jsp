@@ -24,18 +24,18 @@
 </p>
 <form method="post">
     <fieldset>
-        <legend>Product information</legend>
+        <legend><h3>Product information</h3></legend>
         <table class="table table-dark table-striped">
             <tr>
-                <td>Name: </td>
+                <th style="text-align: left">Name: </th>
                 <td><input type="text" name="name" id="name" value="${requestScope["product"].getName()}"></td>
             </tr>
             <tr>
-                <td>Price: </td>
+                <th style="text-align: left">Price: </th>
                 <td><input type="text" name="price" id="price" value="${requestScope["product"].getPrice()}"></td>
             </tr>
             <tr>
-                <td>Description: </td>
+                <th style="text-align: left">Description: </th>
                 <td><input type="text" name="description" id="description" value="${requestScope["product"].getDescription()}"> </td>
             </tr>
             <tr>

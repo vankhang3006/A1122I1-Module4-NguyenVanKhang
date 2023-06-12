@@ -15,24 +15,21 @@
 </head>
 <body>
 <h1 style="text-align: center">Delete product</h1>
-<p>
-    <a style="text-decoration: none" href="/products">Back to product list</a>
-</p>
 <form method="post">
     <h3 style="color: #bb2d3b">Are you sure?</h3>
     <fieldset>
-        <legend>Product information</legend>
+        <legend><h2>Product information</h2></legend>
         <table class="table table-dark table-striped">
             <tr>
-                <td>Name: </td>
+                <th>Name: </th>
                 <td>${requestScope["product"].getName()}</td>
             </tr>
             <tr>
-                <td>Price: </td>
+                <th>Price: </th>
                 <td>${requestScope["product"].getPrice()}</td>
             </tr>
             <tr>
-                <td>Description: </td>
+                <th>Description: </th>
                 <td>${requestScope["product"].getDescription()}</td>
             </tr>
             <tr>

@@ -22,15 +22,15 @@
 </p>
 <table class="table table-dark table-striped">
     <tr>
-        <td>Name: </td>
+        <th>Name: </th>
         <td>${requestScope["product"].getName()}</td>
     </tr>
     <tr>
-        <td>Price: </td>
+        <th>Price: </th>
         <td><fmt:formatNumber type="number" pattern="###$" value="${requestScope['product'].getPrice()}"></fmt:formatNumber> </td>
     </tr>
     <tr>
-        <td>Description: </td>
+        <th>Description: </th>
         <td>${requestScope["product"].getDescription()}</td>
     </tr>
 </table>

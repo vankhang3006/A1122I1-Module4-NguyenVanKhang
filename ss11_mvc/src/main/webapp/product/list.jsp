@@ -20,18 +20,18 @@
 <p>
     <a style="text-decoration: none" href="/products?action=create">Create new product</a>
 </p>
-<p>
-    <input style="height: 35px; " type="text" id="search-name" placeholder="Search By Name">
-    <button class="btn btn-outline-primary" onclick="searchProduct()">Search</button>
-</p>
 
+<div class="input-group mb-3">
+    <input type="text" id="search-name" class="form-control" placeholder="Search By Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="searchProduct()">Search</button>
+</div>
 <table class="table table-dark table-striped">
     <tr>
-        <td>Name</td>
-        <td>Price</td>
-        <td>Description</td>
-        <td>Edit</td>
-        <td>Delete</td>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     <c:forEach items='${requestScope["products"]}' var="product">
         <tr>
@@ -43,6 +43,7 @@
         </tr>
     </c:forEach>
 </table>
+
 <script>
     function searchProduct() {
         // Lấy giá trị tên sản phẩm từ input
