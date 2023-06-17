@@ -15,9 +15,9 @@ public class UserDAO implements IUserDAO{
             " (?, ?, ?);";
 
     private static final String SELECT_USER_BY_ID = "select id,name,email,country from users where id =?";
-    private static final String SELECT_ALL_USERS = "select * from users";
-    private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
-    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
+    private static final String SELECT_ALL_USERS = "call GetUsers()";
+    private static final String DELETE_USERS_SQL = "call DeleteUser(?)";
+    private static final String UPDATE_USERS_SQL = "call UpdateUser(?, ?, ?, ?);";
     private static final String SEARCH_USERS_SQL = "select id,name,email,country from users where country =?";
     private static final String SORT_USER_BY_NAMEA = "select * from users order by name asc";
     private static final String SORT_USER_BY_NAMED = "select * from users order by name desc";
@@ -139,10 +139,10 @@ public class UserDAO implements IUserDAO{
         try (Connection connection = getConnection();
 
              // Step 2:Create a statement using connection object
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
-            System.out.println(preparedStatement);
+             CallableStatement callableStatement = connection.prepareCall(SELECT_ALL_USERS);) {
+            System.out.println(callableStatement);
             // Step 3: Execute the query or update query
-            ResultSet rs = preparedStatement.executeQuery();
+            ResultSet rs = callableStatement.executeQuery();
 
             // Step 4: Process the ResultSet object.
             while (rs.next()) {
@@ -160,22 +160,23 @@ public class UserDAO implements IUserDAO{
 
     public boolean deleteUser(int id) throws SQLException {
         boolean rowDeleted;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
-            statement.setInt(1, id);
-            rowDeleted = statement.executeUpdate() > 0;
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(DELETE_USERS_SQL);) {
+            callableStatement.setInt(1, id);
+            rowDeleted = callableStatement.executeUpdate() > 0;
         }
         return rowDeleted;
     }
 
     public boolean updateUser(User user) throws SQLException {
         boolean rowUpdated;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
-            statement.setString(1, user.getName());
-            statement.setString(2, user.getEmail());
-            statement.setString(3, user.getCountry());
-            statement.setInt(4, user.getId());
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(UPDATE_USERS_SQL);) {
+            callableStatement.setInt(1, user.getId());
+            callableStatement.setString(2, user.getName());
+            callableStatement.setString(3, user.getEmail());
+            callableStatement.setString(4, user.getCountry());
 
-            rowUpdated = statement.executeUpdate() > 0;
+
+            rowUpdated = callableStatement.executeUpdate() > 0;
         }
         return rowUpdated;
     }

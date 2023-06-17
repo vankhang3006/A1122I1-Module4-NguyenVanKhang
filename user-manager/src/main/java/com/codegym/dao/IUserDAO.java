@@ -21,4 +21,5 @@ public interface IUserDAO {
     public boolean updateUser(User user) throws SQLException;
 
     public User searchUserByCountry(String country) throws SQLException;
+
 }
