@@ -34,9 +34,12 @@
             </tr>
             <tr>
                 <td><input type="submit" value="Delete product"></td>
-                <td><a style="text-decoration: none" href="/products">Back to product list</a></td>
+                <td><a style="text-decoration: none" href="/products">Back to product list</a>
+
+                </td>
             </tr>
         </table>
     </fieldset>
+</form>
 </body>
 </html>
