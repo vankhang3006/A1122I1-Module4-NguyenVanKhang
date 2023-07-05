@@ -5,15 +5,10 @@
 <html>
 <head>
     <title>Employee Management</title>
-    <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <h1 style="text-align: center">Trang danh sách nhân viên</h1>
@@ -31,10 +26,10 @@
                     <a class="nav-link" href="customer">Khách hàng</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Dịch vụ</a>
+                    <a class="nav-link" href="service">Dịch vụ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hợp đồng</a>
+                    <a class="nav-link" href="contract">Hợp đồng</a>
                 </li>
 
             </ul>
@@ -45,7 +40,9 @@
         </div>
     </div>
 </nav>
-    <a href="/employee?action=add">Thêm mới</a>
+<button type="button" class="btn btn-primary" onclick="window.location.href='/employee?action=add'">
+    <span class="bi bi-plus-circle"></span> Thêm mới
+</button>
     <p style="color: red">${mess}</p>
 <table id="employeeTable" class="table table-dark table-striped">
     <thead>
@@ -98,8 +95,13 @@
                 </c:choose>
             </td>
             <td>
-                <a href="/employee?action=delete&id=${employee.employeeId}">Xoá</a>
-                <a href="/employee?action=edit&id=${employee.employeeId}">Sửa</a>
+                <button type="button" class="btn btn-danger" onclick="window.location.href='/employee?action=delete&id=${employee.employeeId}'">
+                    <span class="bi bi-trash"></span> Xoá
+                </button>
+
+                <button type="button" class="btn btn-primary" onclick="window.location.href='/employee?action=edit&id=${employee.employeeId}'">
+                    <span class="bi bi-pencil"></span> Sửa
+                </button>
             </td>
         </tr>
     </c:forEach>
@@ -133,5 +135,9 @@
         window.location.href = "/employee?action=find&name=" + name;
     }
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

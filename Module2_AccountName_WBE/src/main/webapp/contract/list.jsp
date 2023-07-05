@@ -11,9 +11,9 @@
 <html>
 <head>
     <title>Employee Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 <body>
 <h1 style="text-align: center">Trang danh sách hợp đồng</h1>
@@ -41,7 +41,9 @@
         </div>
     </div>
 </nav>
-    <a href="/contract?action=add">Thêm mới</a>
+<button type="button" class="btn btn-primary" onclick="window.location.href='/contract?action=add'">
+    <span class="bi bi-plus-circle"></span> Thêm mới
+</button>
     <p style="color: red">${mess}</p>
 
 <table class="table table-dark table-striped">
@@ -59,11 +61,17 @@
             <td>${contract.endDate}</td>
             <td><fmt:formatNumber type="number" pattern="#.########" value="${contract.deposit}" ></fmt:formatNumber> </td>
               <td>
-                <a href="/contract?action=delete&id=${contract.contractId}">Xoá</a>
-                <a href="/contract?action=edit&id=${contract.contractId}">Sửa</a>
+                  <button type="button" class="btn btn-danger" onclick="window.location.href='/contract?action=delete&id=${contract.contractId}'">
+                      <span class="bi bi-trash"></span> Xoá
+                  </button>
+
+                  <button type="button" class="btn btn-primary" onclick="window.location.href='/contract?action=edit&id=${contract.contractId}'">
+                      <span class="bi bi-pencil"></span> Sửa
+                  </button>
               </td>
         </tr>
     </c:forEach>
 </table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

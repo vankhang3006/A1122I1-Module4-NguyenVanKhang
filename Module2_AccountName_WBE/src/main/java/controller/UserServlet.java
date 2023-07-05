@@ -33,7 +33,8 @@ public class UserServlet extends HttpServlet {
             String message = "Tên đăng nhập hoặc mật khẩu không đúng!";
             request.setAttribute("message", message); // Đặt thông báo lỗi vào request
             request.getSession().setAttribute("username", username);
-            request.getSession().setAttribute("realName", password);
+            request.getSession().setAttribute("password", password);
+
             dispatcher=request.getRequestDispatcher("login.jsp"); // Điều hướng người dùng quay lại trang đăng nhập
             dispatcher.forward(request, response);
         } else {
