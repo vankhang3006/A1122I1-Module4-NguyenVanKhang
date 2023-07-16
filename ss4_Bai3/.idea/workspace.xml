@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="379e6c58-0e48-4786-b7ff-8caa494b53cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo_spring_mvc/.idea/demo_spring_mvc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo_spring_mvc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/java/com/codegym/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/java/com/codegym/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/java/com/codegym/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/java/com/codegym/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_ProductManagement/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/java/com/codegym/controller/MailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/java/com/codegym/model/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/java/com/codegym/repository/IMailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/java/com/codegym/repository/MailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/java/com/codegym/service/IMailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/java/com/codegym/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/webapp/WEB-INF/views/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/webapp/WEB-INF/views/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_Bai1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/HealthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/controller/SongController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/model/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/model/SongForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/service/ISongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/java/com/codegym/service/SongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/resources/upload_file.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4_bai2/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A1122I1-Nguyễn Văn Khang-báo cáo tuần..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../A1122I1-Nguyễn Văn Khang-báo cáo tuần..docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CG-DN Case Study for Database_v1.2_Answer_and_Data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CG-DN CaseStudy Furama Resort Module 3 Database.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/config/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/controller/ContractServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/controller/EmployeeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/controller/ServiceServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/Contract/Contract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/attachService/AttachService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/customer/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/customer/CustomerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/employee/Division.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/employee/EducationDegree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/employee/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/employee/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/service/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/service/RentType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/service/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/service/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/model/service/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/repository/ICustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/bin/main/repository/impl/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/config/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/controller/ContractServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/controller/EmployeeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/controller/ServiceServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/Contract/Contract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/attachService/AttachService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/customer/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/customer/CustomerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/employee/Division.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/employee/EducationDegree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/employee/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/employee/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/service/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/service/RentType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/service/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/service/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/model/user/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/IContractRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/ICustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/IEmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/IServiceRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/IUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/impl/ContractRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/impl/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/impl/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/impl/ServiceRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/repository/impl/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/IContractService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/ICustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/IEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/IServiceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/IUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/impl/ContractService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/impl/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/impl/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/impl/ServiceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/classes/java/main/service/impl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/libs/Module2_AccountName_WBE-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/config/FilterUTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/controller/ContractServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/controller/CustomerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/controller/EmployeeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/controller/ServiceServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/controller/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/Contract/Contract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/attachService/AttachService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/customer/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/customer/CustomerType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/employee/Division.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/employee/EducationDegree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/employee/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/employee/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/service/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/service/RentType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/service/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/service/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/model/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/IContractRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/IEmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/IServiceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/IUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/impl/ContractRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/impl/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/impl/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/impl/ServiceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/repository/impl/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/IContractService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/ICustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/IEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/IServiceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/impl/ContractService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/impl/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/impl/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/impl/ServiceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/java/service/impl/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/contract/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/contract/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/contract/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/contract/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/contract/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/customer/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/customer/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/customer/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/customer/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/customer/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/employee/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/employee/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/employee/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/employee/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/employee/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/logo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/service/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/service/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/service/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/service/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/service/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2_AccountName_WBE/src/main/webapp/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo_spring_mvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../demo_spring_mvc/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/config/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/repository/IProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/repository/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/service/IProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/classes/java/main/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/libs/ketthucmd3-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/config/FilterUTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/controller/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/repository/IProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/service/IProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/java/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/webapp/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/webapp/product/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/webapp/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/webapp/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ketthucmd3/src/main/webapp/product/searchResult.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/bin/main/com/codegym/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/bin/main/com/codegym/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/bin/main/com/codegym/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/bin/main/com/codegym/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/bin/main/com/codegym/service/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/classes/java/main/com/codegym/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/classes/java/main/com/codegym/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/classes/java/main/com/codegym/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/classes/java/main/com/codegym/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/classes/java/main/com/codegym/service/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/libs/demo_jstl-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/java/com/codegym/controller/CustomerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/java/com/codegym/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/java/com/codegym/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/java/com/codegym/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/java/com/codegym/service/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/bootstrap5/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/customer/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss1-CSDLQH/Data/dbstudent.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss1-CSDLQH/Data/furama_management.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss1-CSDLQH/Data/std.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/.idea/ss10_JSPvaJSTL.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/build/classes/java/main/model/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/build/classes/java/main/servlet/CalculatorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/build/libs/demo_jstl-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/java/model/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/java/servlet/CalculatorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/bootstrap5/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai1/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/build/classes/java/main/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/build/classes/java/main/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/build/libs/demo_jstl-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/java/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/java/CustomerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/bootstrap5/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/hoa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/hoan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/khoa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/nam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_JSPvaJSTL/Bai2/src/main/webapp/thi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/ss11_mvc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build/classes/java/main/com/codegym/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build/classes/java/main/com/codegym/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build/classes/java/main/com/codegym/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build/classes/java/main/com/codegym/service/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build/libs/demo_jstl-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/java/com/codegym/controller/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/java/com/codegym/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/java/com/codegym/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/java/com/codegym/service/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/bootstrap5/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/src/main/webapp/product/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_ThietKeCSDL/ERD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_ThietKeCSDL/MoHinhQuanHe.mdj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_ThietKeCSDL/QuanLyBanHang.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_ThietKeCSDL/QuanLyBanHang.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_TaoCSDL/QuanLyBanHang.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_TaoCSDL/QuanLySinhVien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5_ViewStoredProcedure/demo.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai1/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai2/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/html/chuong1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/html/chuong2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/html/chuong3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/html/demen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/img/chuong1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/img/chuong2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/Bai3/img/chuong3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/css/css2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/css/dangki.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/css/dangnhap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/css/diendan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/css/gopy.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/css/ict.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/css/tinvideo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/html/dangki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/html/dangnhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/html/diendan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/html/gopy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/html/ict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/html/tinvideo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/6g.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/HD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/XIAO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/a8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/anh1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/anh2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/anh3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/anh4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/anh5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/anhgopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/bn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/bnp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/email.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/gg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/gopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/hd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/hot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/im1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/imgloa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/miband.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/new.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/qc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/qc3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/qc4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/qd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/r1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/r2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/r3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/r4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/r5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/tk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/tk1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/tk2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/tt1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/vivo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/vivo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/vne.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/win.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/win2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/xc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/ima/xcco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/js/dangki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/js/dangnhap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/js/gopy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/js/slide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_CSS/test/videos/1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/.idea/ss7_Layout.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/Bai1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/Bai1/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/Bai2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/Bai4/aside.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/Bai4/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/Bai4/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/Bai4/trangxemhoathinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/RWD/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/RWD/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/RWD/tải xuống.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/test/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/test/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_Layout/test/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/.idea/ss8_bootstrap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai1/img_fjords.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai1/img_forest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai1/img_lights.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai1/img_mountains.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai1/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai2/landingPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_bootstrap/Bai2/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/build/classes/java/main/DiscountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/build/libs/demo_JSP_Servlet-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/build/libs/demo_jstl-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/java/DiscountServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/bootstrap5/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_UngDungWeb/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/bin/main/com/codegym/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/bin/main/com/codegym/dao/IUserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/bin/main/com/codegym/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/bin/main/com/codegym/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/classes/java/main/com/codegym/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/classes/java/main/com/codegym/dao/IUserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/classes/java/main/com/codegym/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/classes/java/main/com/codegym/model/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/classes/java/main/com/codegym/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/classes/java/main/com/codegym/model/User_Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/libs/user-manager-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/java/com/codegym/controller/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/java/com/codegym/dao/IUserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/java/com/codegym/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/java/com/codegym/model/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/java/com/codegym/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/java/com/codegym/model/User_Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/webapp/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/webapp/user/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/webapp/user/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/webapp/user/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/src/main/webapp/user/searched.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-manager/users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/css/css2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/css/dangki.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/css/dangnhap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/css/diendan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/css/gopy.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/css/ict.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/css/tinvideo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/html/dangki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/html/dangnhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/html/diendan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/html/gopy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/html/ict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/html/tinvideo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/6g.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/HD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/XIAO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/a8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/anh1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/anh2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/anh3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/anh4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/anh5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/anhgopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/bn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/bnp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/email.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/gg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/gopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/hd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/hot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/im1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/imgloa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/miband.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/new.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/qc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/qc3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/qc4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/qd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/r1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/r2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/r3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/r4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/r5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/tk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/tk1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/tk2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/tt1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/vivo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/vivo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/vne.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/win.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/win2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/xc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/ima/xcco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/js/dangki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/js/dangnhap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/js/gopy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/js/slide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website_news_basic-master/videos/1.mp4" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2STOLY9am4tTRig1GDR4jPybHs8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss4_Bai2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codegym\module4\ss4_Bai3\src\main\java\configuration" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/WEB-INF/views/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : ss4_Bai3-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="57830d44-ffec-41d8-aeb2-76ffe71104ae" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64569" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : ss4_Bai3-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Tomcat Server.Tomcat 9" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="379e6c58-0e48-4786-b7ff-8caa494b53cb" name="Changes" comment="" />
+      <created>1689167049937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689167049937</updated>
+      <workItem from="1689167053046" duration="11166000" />
+      <workItem from="1689212489451" duration="2066000" />
+      <workItem from="1689226980374" duration="162000" />
+      <workItem from="1689250669986" duration="2721000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

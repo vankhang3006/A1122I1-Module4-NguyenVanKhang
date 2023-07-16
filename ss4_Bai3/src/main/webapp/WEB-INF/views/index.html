@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        h1, h2{
+            text-align: center;
+        }
+        h3{
+            color: red;
+            text-align: center;
+        }
+        .danger{
+            font-weight: bold;
+            font-style: italic;
+            color: red;
+        }
+        form{
+            width: 100%;
+        }
+        table{
+            width: 100%;
+        }
+        td textarea{
+            width: 100%;
+        }
+        .center-button {
+            display: block;
+            margin: 0 auto;
+        }
+        button{
+            border-radius: 30px;
+            height: 60px;
+            width: 160px;
+            background-color: green;
+            font-size: 20px;
+            color: white;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<h1>TỜ KHAI Y TẾ</h1>
+<h2>ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHÒNG CHỐNG DỊCH BỆNH TRUYỀN NHIỄM</h2>
+<h3>Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</h3>
+<form>
+<label for="name">Họ tên (Ghi chữ IN HOA) <span class="danger" >(*)</span></label></br>
+<input type="text" style="width: 100%" id="name" >
+<table>
+    <tr>
+        <td><label for="birthday" >Năm sinh <span class="danger" >(*)</span></label></td>
+        <td><label for="gender">Giới tính <span class="danger" >(*)</span></label></td>
+        <td><label for="nationality">Quốc tịch <span class="danger" >(*)</span></label></td>
+    </tr>
+    <tr>
+        <td style="padding-right: 20px"><input type="text" style="width: 100%" id="birthday" ></td>
+        <td style="padding-right: 20px"><input type="text" style="width: 100%" id="gender" ></td>
+        <td><input type="text" style="width: 100%" id="nationality" ></td>
+    </tr>
+</table>
+    <label for="cmnd">Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác <span class="danger" >(*)</span></label></br>
+    <input type="text" style="width: 100%" id="cmnd" >
+    <label >Thông tin đi lại <span class="danger" >(*)</span></label></br>
+    <input name="vehicle" type="radio" value="Tàu bay" />Tàu bay
+    <input name="vehicle" type="radio" value="Tàu thuyền" />Tàu thuyền
+    <input name="vehicle" type="radio" value="Ô tô" />Ô tô
+    <input name="vehicle" type="radio" value="Khác" />Khác(Ghi rõ)
+    <table>
+        <tr>
+            <td><label for="numberVehicle" >Số hiệu phương tiện</label></td>
+            <td><label for="numberChair">Số ghế</label></td>
+        </tr>
+        <tr>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" id="numberVehicle" placeholder="VD: VN123" ></td>
+            <td ><input type="text" style="width: 100%" id="numberChair" ></td>
+        </tr>
+        <tr>
+            <td><label>Ngày khởi hành <span class="danger" >(*)</span></label></td>
+            <td><label>Ngày kết thúc <span class="danger" >(*)</span></label></td>
+        </tr>
+        <tr>
+            <td style="padding-right: 20px">
+                <input type="text" style="width: 31.5%" >
+                <input type="text" style="width: 31.5%; margin-left: 5px" >
+                <input type="text" style="width: 31.5%; margin-left: 5px" >
+            </td>
+            <td style="padding-right: 0">
+                <input type="text" style="width: 31.5%" >
+                <input type="text" style="width: 31.5%; margin-left: 5px" >
+                <input type="text" style="width: 31.5%; margin-left: 5px" >
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><label>Trong vòng 14 ngày qua, Anh/Chị có đến tỉnh/thành phố nào? <span class="danger" >(*)</span></label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><textarea rows="2"></textarea></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td colspan="3"><b>Địa chỉ liên lạc</b></td>
+        </tr>
+        <tr>
+            <td><label >Tỉnh / thành <span class="danger" >(*)</span></label></td>
+            <td><label >Quận / huyện <span class="danger" >(*)</span></label></td>
+            <td><label >Phường / xã <span class="danger" >(*)</span></label></td>
+        </tr>
+        <tr>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" ></td>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" ></td>
+            <td><input type="text" style="width: 100%" ></td>
+        </tr>
+        <tr>
+            <td colspan="3">Địa chỉ nơi ở <span class="danger" >(*)</span></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" style="width: 100%"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td ><label>Điện thoại <span class="danger" >(*)</span></label></td>
+            <td><label>Email</label></td>
+        </tr>
+        <tr>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" ></td>
+            <td><input type="text" style="width: 100%" ></td>
+        </tr>
+    </table>
+    <p><b>Trong vòng 14 ngày qua, Anh/Chị có thấy xuất hiện dấu hiệu nào sau đây không? <span class="danger" >(*)</span></b></p>
+    <table style="border: 1px solid gray; border-collapse: collapse">
+        <tr style="border: 1px solid gray; background-color: lightgray; height: 40px;">
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;" ><label><b>Triệu chứng</b></label></td>
+            <th style="border: 1px solid gray; width: 5%" >Có</th>
+            <th style="border: 1px solid gray; width: 5%">Không</th>
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><label><b>Triệu chứng</b></label></td>
+            <th style="border: 1px solid gray; width: 5%">Có</th>
+            <th style="border: 1px solid gray; width: 5%">Không</th>
+        </tr>
+        <tr style="border: 1px solid gray;">
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Sốt <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Sốt" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Sốt" value="No"></th>
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Nôn/buồn nôn <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="No"></th>
+        </tr>
+        <tr style="border: 1px solid gray;">
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Ho <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Ho" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="No"></th>
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Tiêu chảy <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Tiêu chảy" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Tiêu chảy" value="No"></th>
+        </tr>
+        <tr style="border: 1px solid gray;">
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Khó thở <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Khó thở" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Khó thở" value="No"></th>
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Xuất huyết ngoài da <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Xuất huyết" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Xuất huyết" value="No"></th>
+        </tr>
+        <tr style="border: 1px solid gray;">
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Đau họng <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Đau họng" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Đau họng" value="Yes"></th>
+            <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Nổi ban ngoài da <span class="danger" >(*)</span></p></td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nổi ban" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nổi ban" value="No"></th>
+        </tr>
+    </table>
+    <p><b>Lịch sử phơi nhiễm: Trong vòng 14 ngày qua, Anh/Chị có <span class="danger" >(*)</span></b></p>
+    <table style="border: 1px solid gray; border-collapse: collapse">
+        <tr style="background-color: lightgray; height: 40px;">
+            <td style="border: 1px solid gray; width: 90%; padding-left: 10px;"></td>
+            <th style="border: 1px solid gray; width: 5%">Có</th>
+            <th style="border: 1px solid gray; width: 5%">Không</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid gray; width: 90%; padding-left: 10px;"><p>Đến trang trại chăn nuôi / chợ buôn bán động vật sống / cơ sở giết mổ động vật / tiếp xúc động vật <span class="danger" >(*)</span></p> </td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="động vật" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="động vật" value="No"></th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid gray; width: 90%; padding-left: 10px;"><p>Tiếp xúc gần (<2m) với người mắc bệnh viêm đường hô hấp do nCoV <span class="danger" >(*)</span></p> </td>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="người" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="người" value="No"></th>
+        </tr>
+    </table>
+    <p style="color: red">Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch bệnh, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19.</p>
+    <p style="color: red">Khi bạn nhấn nút "Gửi" là bạn đã hiểu và đồng ý.</p>
+    <button type="submit" class="center-button">Gửi tờ khai</button>
+</form>
+</body>
+</html>
