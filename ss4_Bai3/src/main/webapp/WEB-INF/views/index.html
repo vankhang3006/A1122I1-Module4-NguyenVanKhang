@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -45,9 +45,11 @@
 <h1>TỜ KHAI Y TẾ</h1>
 <h2>ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHÒNG CHỐNG DỊCH BỆNH TRUYỀN NHIỄM</h2>
 <h3>Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</h3>
-<form>
+<form th:action="@{/health/save}" th:object="${health}"
+      method="POST" >
+    <input type="hidden" th:field="*{id}"/>
 <label for="name">Họ tên (Ghi chữ IN HOA) <span class="danger" >(*)</span></label></br>
-<input type="text" style="width: 100%" id="name" >
+<input type="text" style="width: 100%" id="name" th:field="*{hoten}" onblur="checkInputValue()" required>
 <table>
     <tr>
         <td><label for="birthday" >Năm sinh <span class="danger" >(*)</span></label></td>
@@ -55,26 +57,31 @@
         <td><label for="nationality">Quốc tịch <span class="danger" >(*)</span></label></td>
     </tr>
     <tr>
-        <td style="padding-right: 20px"><input type="text" style="width: 100%" id="birthday" ></td>
-        <td style="padding-right: 20px"><input type="text" style="width: 100%" id="gender" ></td>
-        <td><input type="text" style="width: 100%" id="nationality" ></td>
+        <td style="padding-right: 20px"><input type="text" style="width: 100%" id="birthday" required th:field="*{ngaysinh}" ></td>
+        <td style="padding-right: 20px">
+            <select id="gender" th:field="*{gioitinh}" style="width: 100%">
+                <option th:value="True" th:text="Nam"></option>
+                <option th:value="False" th:text="Nữ"></option>
+            </select>
+        </td>
+        <td><input type="text" style="width: 100%" id="nationality" required th:field="*{quoctich}"></td>
     </tr>
 </table>
     <label for="cmnd">Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác <span class="danger" >(*)</span></label></br>
-    <input type="text" style="width: 100%" id="cmnd" >
+    <input type="text" style="width: 100%" id="cmnd"  required th:field="*{cmnd}" >
     <label >Thông tin đi lại <span class="danger" >(*)</span></label></br>
-    <input name="vehicle" type="radio" value="Tàu bay" />Tàu bay
-    <input name="vehicle" type="radio" value="Tàu thuyền" />Tàu thuyền
-    <input name="vehicle" type="radio" value="Ô tô" />Ô tô
-    <input name="vehicle" type="radio" value="Khác" />Khác(Ghi rõ)
+    <input name="vehicle" type="radio" value="Tàu bay" th:field="*{phuongtien}" />Tàu bay
+    <input name="vehicle" type="radio" value="Tàu thuyền" th:field="*{phuongtien}"  />Tàu thuyền
+    <input name="vehicle" type="radio" value="Ô tô" th:field="*{phuongtien}" />Ô tô
+    <input name="vehicle" type="radio" value="Khác" th:field="*{phuongtien}"/>Khác(Ghi rõ)
     <table>
         <tr>
             <td><label for="numberVehicle" >Số hiệu phương tiện</label></td>
             <td><label for="numberChair">Số ghế</label></td>
         </tr>
         <tr>
-            <td style="padding-right: 20px"><input type="text" style="width: 100%" id="numberVehicle" placeholder="VD: VN123" ></td>
-            <td ><input type="text" style="width: 100%" id="numberChair" ></td>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" id="numberVehicle" placeholder="VD: VN123" th:field="*{maphuongtien}" required ></td>
+            <td ><input type="text" placeholder="" style="width: 100%" id="numberChair" th:field="*{soghe}" required ></td>
         </tr>
         <tr>
             <td><label>Ngày khởi hành <span class="danger" >(*)</span></label></td>
@@ -82,21 +89,21 @@
         </tr>
         <tr>
             <td style="padding-right: 20px">
-                <input type="text" style="width: 31.5%" >
-                <input type="text" style="width: 31.5%; margin-left: 5px" >
-                <input type="text" style="width: 31.5%; margin-left: 5px" >
+                <input type="text" placeholder="" id="startday" style="width: 31.5%" th:field="*{ngaybd}" required >
+                <input type="text" placeholder="" id="startmonth" style="width: 31.5%; margin-left: 5px" th:field="*{thangbd}" required >
+                <input type="text" placeholder="" id="startyear" style="width: 31.5%; margin-left: 5px" th:field="*{nambd}" required >
             </td>
             <td style="padding-right: 0">
-                <input type="text" style="width: 31.5%" >
-                <input type="text" style="width: 31.5%; margin-left: 5px" >
-                <input type="text" style="width: 31.5%; margin-left: 5px" >
+                <input type="text" placeholder="" id="endday" style="width: 31.5%" th:field="*{ngaykt}" required >
+                <input type="text" placeholder="" id="endmonth" style="width: 31.5%; margin-left: 5px" th:field="*{thangkt}" required >
+                <input type="text" placeholder="" id="endyear" style="width: 31.5%; margin-left: 5px" th:field="*{namkt}" required  >
             </td>
         </tr>
         <tr>
             <td colspan="2"><label>Trong vòng 14 ngày qua, Anh/Chị có đến tỉnh/thành phố nào? <span class="danger" >(*)</span></label></td>
         </tr>
         <tr>
-            <td colspan="2"><textarea rows="2"></textarea></td>
+            <td colspan="2"><textarea rows="2" th:field="*{noighe}" required></textarea></td>
         </tr>
     </table>
     <table>
@@ -109,15 +116,15 @@
             <td><label >Phường / xã <span class="danger" >(*)</span></label></td>
         </tr>
         <tr>
-            <td style="padding-right: 20px"><input type="text" style="width: 100%" ></td>
-            <td style="padding-right: 20px"><input type="text" style="width: 100%" ></td>
-            <td><input type="text" style="width: 100%" ></td>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" th:field="*{tinhlienlac}" required ></td>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" th:field="*{quanlienlac}" required ></td>
+            <td><input type="text" style="width: 100%" th:field="*{phuonglienlac}" required ></td>
         </tr>
         <tr>
             <td colspan="3">Địa chỉ nơi ở <span class="danger" >(*)</span></td>
         </tr>
         <tr>
-            <td colspan="3"><input type="text" style="width: 100%"></td>
+            <td colspan="3"><input type="text" style="width: 100%" th:field="*{diachi}" required ></td>
         </tr>
     </table>
     <table>
@@ -126,8 +133,8 @@
             <td><label>Email</label></td>
         </tr>
         <tr>
-            <td style="padding-right: 20px"><input type="text" style="width: 100%" ></td>
-            <td><input type="text" style="width: 100%" ></td>
+            <td style="padding-right: 20px"><input type="text" style="width: 100%" th:field="*{sdt}" required ></td>
+            <td><input type="text" style="width: 100%" th:field="*{email}" required ></td>
         </tr>
     </table>
     <p><b>Trong vòng 14 ngày qua, Anh/Chị có thấy xuất hiện dấu hiệu nào sau đây không? <span class="danger" >(*)</span></b></p>
@@ -142,35 +149,35 @@
         </tr>
         <tr style="border: 1px solid gray;">
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Sốt <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Sốt" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Sốt" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Sốt" value="True" th:field="*{sot}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Sốt" value="False" th:field="*{sot}" required></th>
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Nôn/buồn nôn <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="True" th:field="*{non}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="False" th:field="*{non}" required></th>
         </tr>
         <tr style="border: 1px solid gray;">
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Ho <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Ho" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Ho" value="True" th:field="*{ho}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nôn" value="False" th:field="*{ho}" required></th>
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Tiêu chảy <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Tiêu chảy" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Tiêu chảy" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Tiêu chảy" value="True" th:field="*{tieuchay}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Tiêu chảy" value="False" th:field="*{tieuchay}" required></th>
         </tr>
         <tr style="border: 1px solid gray;">
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Khó thở <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Khó thở" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Khó thở" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Khó thở" value="True" th:field="*{khotho}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Khó thở" value="False" th:field="*{khotho}" required></th>
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Xuất huyết ngoài da <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Xuất huyết" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Xuất huyết" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Xuất huyết" value="True" th:field="*{xuathuyet}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Xuất huyết" value="False" th:field="*{xuathuyet}" required></th>
         </tr>
         <tr style="border: 1px solid gray;">
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Đau họng <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Đau họng" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Đau họng" value="Yes"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Đau họng" value="True" th:field="*{dauhong}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Đau họng" value="False" th:field="*{dauhong}" required></th>
             <td style="border: 1px solid gray; width: 40%; padding-left: 10px;"><p>Nổi ban ngoài da <span class="danger" >(*)</span></p></td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nổi ban" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nổi ban" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nổi ban" value="True" th:field="*{noiban}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="Nổi ban" value="False" th:field="*{noiban}" required></th>
         </tr>
     </table>
     <p><b>Lịch sử phơi nhiễm: Trong vòng 14 ngày qua, Anh/Chị có <span class="danger" >(*)</span></b></p>
@@ -182,18 +189,27 @@
         </tr>
         <tr>
             <td style="border: 1px solid gray; width: 90%; padding-left: 10px;"><p>Đến trang trại chăn nuôi / chợ buôn bán động vật sống / cơ sở giết mổ động vật / tiếp xúc động vật <span class="danger" >(*)</span></p> </td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="động vật" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="động vật" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="động vật" value="True" th:field="*{dongvat}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="động vật" value="False" th:field="*{dongvat}" required></th>
         </tr>
         <tr>
             <td style="border: 1px solid gray; width: 90%; padding-left: 10px;"><p>Tiếp xúc gần (<2m) với người mắc bệnh viêm đường hô hấp do nCoV <span class="danger" >(*)</span></p> </td>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="người" value="Yes"></th>
-            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="người" value="No"></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="người" value="True" th:field="*{nguoi}" required></th>
+            <th style="border: 1px solid gray; width: 5%"><input type="radio" name="người" value="False" th:field="*{nguoi}" required></th>
         </tr>
     </table>
     <p style="color: red">Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch bệnh, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19.</p>
     <p style="color: red">Khi bạn nhấn nút "Gửi" là bạn đã hiểu và đồng ý.</p>
     <button type="submit" class="center-button">Gửi tờ khai</button>
 </form>
+<script>
+    function checkInputValue() {
+        var inputValue = document.getElementById("name").value;
+        if (inputValue !== inputValue.toUpperCase()) {
+            alert("Vui lòng nhập chữ in hoa!");
+            document.getElementById("name").value = ""; // Xóa giá trị nhập vào
+        }
+    }
+</script>
 </body>
 </html>

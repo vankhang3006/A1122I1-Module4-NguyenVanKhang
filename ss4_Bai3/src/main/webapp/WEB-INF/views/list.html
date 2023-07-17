@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Danh sách người đã khai báo y tế</h3>
+<p>
+    <a th:href="@{/health/create}">
+        Khai báo
+    </a>
+</p>
+<table id = "healths">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Họ tên</th>
+        <th>Actions</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="health : ${healths}">
+        <td th:text="${health.id}"></td>
+        <td th:text="${health.hoten}"></td>
+        <td>
+            <a th:href="@{/health/{id}/edit(id=${health.getId()})}">edit</a>
+        </td>
+        <td><a th:href="@{/health/{id}/edit(id=${health.getId()})}">view</a></td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
