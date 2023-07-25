@@ -69,7 +69,7 @@
         </tr>
     </table>
     <label for="cmnd">Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác <span class="danger" >(*)</span></label></br>
-    <input type="number" style="width: 100%" id="cmnd" required th:field="*{cmnd}" >
+    <input type="text" style="width: 100%" id="cmnd" required th:field="*{cmnd}" onblur="formatInput(this)">
     <label >Thông tin đi lại <span class="danger" >(*)</span></label></br>
     <input name="vehicle" type="radio" value="Tàu bay" th:field="*{phuongtien}" />Tàu bay
     <input name="vehicle" type="radio" value="Tàu thuyền" th:field="*{phuongtien}"  />Tàu thuyền
@@ -215,6 +215,9 @@
             alert("Vui lòng nhập chữ in hoa!");
             document.getElementById("name").value = ""; // Xóa giá trị nhập vào
         }
+    }
+    function formatInput(input) {
+        input.value = parseFloat(input.value);
     }
 </script>
 </body>

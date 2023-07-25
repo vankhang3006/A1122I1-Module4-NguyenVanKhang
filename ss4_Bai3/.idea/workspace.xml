@@ -5,23 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="379e6c58-0e48-4786-b7ff-8caa494b53cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/config/FilterUTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/model/Health.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/HealthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/IHealthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai1/.idea/modules/ss6_Bai1.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai1/.idea/ss5_Bai1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/.idea/modules/ss5_Bai2.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/model/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/repository/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/repository/ICommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/java/com/codegym/service/ICommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_Bai2/src/main/webapp/WEB-INF/views/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/modules/ss5_demo.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/configuration/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/repository/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/java/com/codegym/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/resources/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/webapp/WEB-INF/views/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_demo/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/modules/ss5_thuchanh.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/java/cg/wbd/grandemonstration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/java/cg/wbd/grandemonstration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/java/cg/wbd/grandemonstration/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/java/cg/wbd/grandemonstration/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/java/cg/wbd/grandemonstration/service/impl/HibernateCustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/java/cg/wbd/grandemonstration/service/impl/SimpleCustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/webapp/WEB-INF/templates/customers/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss5_thuchanh/src/main/webapp/WEB-INF/templates/customers/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/java/com/codegym/ss6_blog/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/java/com/codegym/ss6_blog/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/java/com/codegym/ss6_blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/java/com/codegym/ss6_blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/java/com/codegym/ss6_blog/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/java/com/codegym/ss6_blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/java/com/codegym/ss6_blog/service/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/resources/templates/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_Blog/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A1122I1-Nguyễn Văn Khang-báo cáo tuần..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../A1122I1-Nguyễn Văn Khang-báo cáo tuần..docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codegym/controller/HealthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codegym/controller/HealthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/ss4_Bai3-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ss4_Bai3-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/HealthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss4_bai2/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss4_bai2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss4_bai2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss4_bai2/build/libs/ss4_Bai2-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ss4_bai2/build/libs/ss4_Bai2-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +255,11 @@
       <workItem from="1689250669986" duration="2721000" />
       <workItem from="1689516918337" duration="3398000" />
       <workItem from="1689524390388" duration="552000" />
-      <workItem from="1689562058460" duration="6593000" />
+      <workItem from="1689562058460" duration="8734000" />
+      <workItem from="1689731822681" duration="65000" />
+      <workItem from="1689938496757" duration="12000" />
+      <workItem from="1689948159911" duration="1326000" />
+      <workItem from="1690078278987" duration="9000" />
     </task>
     <servers />
   </component>

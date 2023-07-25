@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h3>Edit Product</h3>
+<p>
+    <a th:href="@{/song}">
+        Back to song list
+    </a>
+</p>
+<div id="form">
+    <form action="#" th:action="@{/song/update}" th:object="${songForm}"
+          method="POST" enctype="multipart/form-data">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Song Name</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <label>Singer Name</label>
+            <input type="text" th:field="*{singer}"/>
+        </div>
+        <div>
+            <label>Audio</label>
+            <input type="file" th:field="*{song}" onchange="validateAudio(this)"/>
+            <p id="error-message" style="display: none; color: red;"></p>
+        </div>
+        <input type="submit" value="Edit"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+<script>
+    function validateAudio(input) {
+        var file = input.files[0];
+        const allowedExtensions = ['mp3', 'wav', 'mp4', 'mov'];
+        const fileExtension = input.files[0].name.split('.').pop();
+        var fileSize = file.size;
+
+        // Kiểm tra loại tệp
+        if (!allowedExtensions.includes(fileExtension)) {
+            alert('Vui lòng chọn một tệp video hoặc âm thanh!');
+            input.value = ''; // Clear the selected file
+        }
+
+        // Kiểm tra kích thước tệp
+        if (fileSize > 52428800) {
+            document.getElementById('error-message').innerHTML = 'Kích thước tệp vượt quá giới hạn (50MB). Vui lòng chọn một tệp nhỏ hơn.';
+            document.getElementById('error-message').style.display = 'block';
+            input.value = '';
+            return;
+        }
+
+        document.getElementById('error-message').style.display = 'none';
+    }
+</script>
+</body>
+</html>
