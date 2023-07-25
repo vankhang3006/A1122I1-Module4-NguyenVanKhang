@@ -11,7 +11,8 @@ public interface ICommentService {
 
     Comment update(Comment comment);
 
+    Comment findById(int id);
+
     Comment like(int id);
 
-    Comment findById(int id);
 }

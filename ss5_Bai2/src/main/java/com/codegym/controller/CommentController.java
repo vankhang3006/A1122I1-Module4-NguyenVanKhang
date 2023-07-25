@@ -35,14 +35,10 @@ public class CommentController {
         return "redirect:/home";
     }
 
-    @PostMapping(value = "like/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody
-    ResponseEntity<Comment> like(@PathVariable(name = "id") int id) {
+    @GetMapping("/like/{id}")
+    public String like(@PathVariable("id") int id) {
         Comment comment = commentService.like(id);
-        System.out.println(comment.getLikeCount());
-        if (comment == null) {
-            return new ResponseEntity<>(comment, HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<>(comment, HttpStatus.OK);
+        commentService.update(comment);
+        return "redirect:/home";
     }
 }

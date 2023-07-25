@@ -69,27 +69,9 @@ public class CommentRepository implements ICommentRepository {
 
     @Override
     public Comment like(int id) {
-        Session session = null;
-        Transaction transaction = null;
-        try {
-            session = ConnectionUtil.sessionFactory.openSession();
-            transaction = session.beginTransaction();
             Comment comment = findById(id);
             comment.setLikeCount(comment.getLikeCount()+1);
-            session.saveOrUpdate(comment);
-            transaction.commit();
             return comment;
-        } catch (Exception ex) {
-            ex.printStackTrace();
-            if (transaction != null) {
-                transaction.rollback();
-            }
-        } finally {
-            if (session != null) {
-                session.close();
-            }
-        }
-        return null;
     }
 
     @Override
