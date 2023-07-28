@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Controller
@@ -23,13 +24,14 @@ public class CommentController {
     public ModelAndView home() {
         ModelAndView modelAndView = new ModelAndView("home");
         modelAndView.addObject("comment", new Comment());
-        List<Comment> comments = commentService.findAll();
+        List<Comment> comments = commentService.findCommentByDateCreate(LocalDate.now());
         modelAndView.addObject("comments", comments);
         return modelAndView;
     }
 
     @PostMapping
     public String save(Comment comment) {
+        comment.setDateCreate(LocalDate.now());
         commentService.saveOrUpdate(comment);
         return "redirect:/home";
     }

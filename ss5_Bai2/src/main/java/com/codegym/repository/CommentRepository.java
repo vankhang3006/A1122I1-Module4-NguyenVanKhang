@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
 import javax.persistence.TypedQuery;
+import java.time.LocalDate;
 import java.util.List;
 
 @Repository
@@ -40,7 +41,7 @@ public class CommentRepository implements ICommentRepository {
 
     @Override
     public List<Comment> findAll() {
-        String queryStr = "SELECT c FROM Comment c";
+        String queryStr = "SELECT c FROM Comment c WHERE DATE(c.dateCreate) = CURRENT_DATE() ";
         TypedQuery<Comment> query = ConnectionUtil.entityManager.createQuery(queryStr, Comment.class);
         return query.getResultList();
     }
@@ -53,6 +54,7 @@ public class CommentRepository implements ICommentRepository {
             session = ConnectionUtil.sessionFactory.openSession();
             transaction = session.beginTransaction();
             comment.setLikeCount(0);
+            comment.setDateCreate(LocalDate.now());
             session.saveOrUpdate(comment);
             transaction.commit();
         } catch (Exception ex) {

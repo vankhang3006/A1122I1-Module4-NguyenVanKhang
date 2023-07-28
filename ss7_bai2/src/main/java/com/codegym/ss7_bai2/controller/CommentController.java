@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Controller
@@ -28,13 +29,14 @@ public class CommentController {
                             ) {
         ModelAndView modelAndView = new ModelAndView("home");
         modelAndView.addObject("comment", new Comment());
-        Page<Comment> comments = commentService.findAll(pageable);
+        Page<Comment> comments = commentService.findAll(pageable,LocalDate.now());
         modelAndView.addObject("comments", comments);
         return modelAndView;
     }
 
     @PostMapping
     public String save(Comment comment) {
+        comment.setDateCreate(LocalDate.now());
         commentService.saveOrUpdate(comment);
         return "redirect:/home";
     }

@@ -33,7 +33,7 @@
         </span>
         <span th:text=" *{c.message}"></span></br>
         <span  th:text="*{c.likeCount}"></span>
-        <span  th:text="*{c.likeCount} >= 1 ? 'likes' : 'like'"></span>
+        <span  th:text="*{c.likeCount} > 1 ? 'likes' : 'like'"></span>
         <button>
             <a th:href="@{/home/like/{id}(id=${c.id})}" style="text-decoration: none">Like</a>
         </button>

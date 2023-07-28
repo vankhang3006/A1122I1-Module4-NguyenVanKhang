@@ -17,6 +17,7 @@
     <tr>
         <th>Title</th>
         <th>Content</th>
+        <th>Date create</th>
         <th>Category</th>
         <th>Edit</th>
         <th>Delete</th>
@@ -26,6 +27,7 @@
         <tr>
             <td th:text="${blog.title}"></td>
             <td th:text="${blog.content}"></td>
+            <td th:text="${blog.dateCreate}"></td>
             <td th:if="${blog.category}" th:text="${blog.category.name}"></td>
             <td th:unless="${blog.category}"></td>
             <td><a th:href="@{/edit-blog/__${blog.id}__ }">Edit</a></td>

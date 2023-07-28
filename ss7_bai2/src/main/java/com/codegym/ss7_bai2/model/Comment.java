@@ -2,9 +2,11 @@ package com.codegym.ss7_bai2.model;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
+
 
 @Entity
-@Table
+@Table(name = "comment")
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,22 +15,24 @@ public class Comment {
     private String author;
     private String message;
     private int likeCount;
-
+    private LocalDate dateCreate;
     public Comment() {
     }
 
-    public Comment(int rate, String author, String message) {
+    public Comment(int rate, String author, String message, LocalDate dateCreate) {
         this.rate = rate;
         this.author = author;
         this.message = message;
+        this.dateCreate = dateCreate;
     }
 
-    public Comment(int id, int rate, String author, String message, int likeCount) {
+    public Comment(int id, int rate, String author, String message, int likeCount, LocalDate dateCreate) {
         this.id = id;
         this.rate = rate;
         this.author = author;
         this.message = message;
         this.likeCount = likeCount;
+        this.dateCreate = dateCreate;
     }
 
     public int getId() {
@@ -65,6 +69,14 @@ public class Comment {
 
     public int getLikeCount() {
         return likeCount;
+    }
+
+    public LocalDate getDateCreate() {
+        return dateCreate;
+    }
+
+    public void setDateCreate(LocalDate dateCreate) {
+        this.dateCreate = dateCreate;
     }
 
     public void setLikeCount(int likeCount) {

@@ -12,6 +12,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,9 +27,16 @@ public class CommentService implements ICommentService{
     }
 
     @Override
+    public Page<Comment> findAll(Pageable pageable, LocalDate date) {
+        return commentRepository.findCommentByDateCreate(pageable,date);
+    }
+
+
+    @Override
     public List<Comment> findAll() {
         return commentRepository.findAll();
     }
+
 
     @Override
     public Optional<Comment> findById(Long id) {
@@ -49,6 +57,8 @@ public class CommentService implements ICommentService{
     public Comment saveOrUpdate(Comment comment) {
         return commentRepository.save(comment);
     }
+
+
 
     @Override
     public Comment findById(int id) {

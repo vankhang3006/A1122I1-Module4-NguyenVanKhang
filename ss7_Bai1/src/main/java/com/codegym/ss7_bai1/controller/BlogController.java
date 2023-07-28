@@ -6,6 +6,7 @@ import com.codegym.ss7_bai1.service.blog.IBlogService;
 import com.codegym.ss7_bai1.service.category.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -13,6 +14,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Optional;
 
 @Controller
@@ -38,6 +41,7 @@ public class BlogController {
 
     @PostMapping("/create-blog")
     public ModelAndView saveBlog(@ModelAttribute("blog") Blog blog) {
+        blog.setDateCreate(LocalDate.now());
         blogService.save(blog);
         ModelAndView modelAndView = new ModelAndView("/blog/create");
         modelAndView.addObject("blog", new Blog());
@@ -47,8 +51,11 @@ public class BlogController {
 
     @GetMapping("/blogs")
     public ModelAndView listBlogs(@RequestParam("search") Optional<String> search,
-                                  @PageableDefault(size = 2,page = 0,direction = Sort.Direction.ASC)Pageable pageable){
+                                  @RequestParam(defaultValue = "0") int page,
+                                  @RequestParam(defaultValue = "2") int size
+                                    ){
         Page<Blog> blogs;
+        Pageable pageable = PageRequest.of(page,size, Sort.by("dateCreate"));
         if(search.isPresent()){
             blogs = blogService.findAllByTitleContaining(search.get(), pageable);
         } else {
@@ -75,6 +82,7 @@ public class BlogController {
 
     @PostMapping("/edit-blog")
     public ModelAndView updateBlog(@ModelAttribute("blog") Blog blog) {
+        blog.setDateCreate(LocalDate.now());
         blogService.save(blog);
         ModelAndView modelAndView = new ModelAndView("/blog/edit");
         modelAndView.addObject("blog", blog);
