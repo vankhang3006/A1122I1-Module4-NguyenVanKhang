@@ -1,23 +1,28 @@
 package com.codegym.ss7_bai2.service;
 
 
+import com.codegym.ss7_bai2.exception.CommentException;
 import com.codegym.ss7_bai2.model.Comment;
-import com.codegym.ss7_bai2.reposiotry.ICommentRepository;
-import jakarta.persistence.EntityManager;
-import org.hibernate.HibernateException;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
+import com.codegym.ss7_bai2.repository.ICommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class CommentService implements ICommentService{
+
+    private  static List<String> badWords = new ArrayList<>();
+    static {
+        badWords.add("fuck");
+        badWords.add("shit");
+        badWords.add("bitch");
+    }
     @Autowired
     private ICommentRepository commentRepository;
 
@@ -37,6 +42,16 @@ public class CommentService implements ICommentService{
         return commentRepository.findAll();
     }
 
+    @Override
+    public Comment saveOrUpdate(Comment comment) throws CommentException {
+        for(String w : badWords){
+            if (comment.getMessage().contains(w)){
+                throw new CommentException("Bình luận của bạn đã vi phạm tiêu chuẩn của cộng đồng!");
+            }
+        }
+        return commentRepository.save(comment);
+    }
+
 
     @Override
     public Optional<Comment> findById(Long id) {
@@ -52,12 +67,6 @@ public class CommentService implements ICommentService{
     public void remove(Long id) {
 
     }
-
-    @Override
-    public Comment saveOrUpdate(Comment comment) {
-        return commentRepository.save(comment);
-    }
-
 
 
     @Override

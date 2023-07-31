@@ -1,4 +1,4 @@
-package com.codegym.ss7_bai2.reposiotry;
+package com.codegym.ss7_bai2.repository;
 
 
 
@@ -11,7 +11,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public interface ICommentRepository extends JpaRepository<Comment,Integer> {
     Page<Comment> findCommentByDateCreate(Pageable pageable, LocalDate date);

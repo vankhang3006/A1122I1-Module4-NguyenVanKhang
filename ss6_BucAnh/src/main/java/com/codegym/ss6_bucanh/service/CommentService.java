@@ -1,13 +1,7 @@
 package com.codegym.ss6_bucanh.service;
 
 import com.codegym.ss6_bucanh.model.Comment;
-import com.codegym.ss6_bucanh.reposiotry.ICommentRepository;
-import jakarta.persistence.EntityManager;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
+import com.codegym.ss6_bucanh.repository.ICommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

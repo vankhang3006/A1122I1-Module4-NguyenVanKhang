@@ -1,4 +1,4 @@
-package com.codegym.ss6_bucanh.reposiotry;
+package com.codegym.ss6_bucanh.repository;
 
 
 

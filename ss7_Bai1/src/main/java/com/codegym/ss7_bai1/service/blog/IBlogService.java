@@ -10,6 +10,6 @@ import org.springframework.data.domain.Pageable;
 public interface IBlogService extends IGeneralService<Blog> {
     Iterable<Blog> findAllByCategory(Category category);
     Page<Blog> findAll(Pageable pageable);
-    Page<Blog> findAllByTitleContaining(String title, Pageable pageable);
+    Page<Blog> findAll(Pageable pageable, String title);
     Iterable<Blog> findAll();
 }

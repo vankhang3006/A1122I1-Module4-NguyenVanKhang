@@ -3,6 +3,7 @@ package com.codegym.ss8_bai2.dto;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
+import org.springframework.web.multipart.MultipartFile;
 
 public class SongDto implements Validator {
     private int id;
@@ -10,11 +11,18 @@ public class SongDto implements Validator {
     private String singer;
     private String type;
 
+
     public SongDto() {
     }
 
     public SongDto(int id, String name, String singer, String type) {
         this.id = id;
+        this.name = name;
+        this.singer = singer;
+        this.type = type;
+    }
+
+    public SongDto(String name, String singer, String type, MultipartFile song) {
         this.name = name;
         this.singer = singer;
         this.type = type;

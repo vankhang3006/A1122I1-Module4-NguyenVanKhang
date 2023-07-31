@@ -1,34 +1,19 @@
 package com.codegym.ss8_bai2.model;
 
+import org.springframework.web.multipart.MultipartFile;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-
-@Entity
-public class Song {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class SongForm {
     private int id;
     private String name;
     private String singer;
     private String type;
-    private String song;
+    private MultipartFile song;
 
-    public Song() {
+    public SongForm() {
     }
 
-    public Song(int id, String name, String singer, String type, String song) {
+    public SongForm(int id, String name, String singer, String type, MultipartFile song) {
         this.id = id;
-        this.name = name;
-        this.singer = singer;
-        this.type = type;
-        this.song = song;
-    }
-
-    public Song(String name, String singer, String type, String song) {
         this.name = name;
         this.singer = singer;
         this.type = type;
@@ -67,11 +52,11 @@ public class Song {
         this.type = type;
     }
 
-    public String getSong() {
+    public MultipartFile getSong() {
         return song;
     }
 
-    public void setSong(String song) {
+    public void setSong(MultipartFile song) {
         this.song = song;
     }
 }

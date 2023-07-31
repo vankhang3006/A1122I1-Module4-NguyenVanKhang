@@ -50,19 +50,13 @@ public class BlogController {
     }
 
     @GetMapping("/blogs")
-    public ModelAndView listBlogs(@RequestParam("search") Optional<String> search,
-                                  @RequestParam(defaultValue = "0") int page,
-                                  @RequestParam(defaultValue = "2") int size
+    public ModelAndView listBlogs(@PageableDefault(size = 2,page = 0,sort = "dateCreate",direction = Sort.Direction.ASC)Pageable pageable,
+                                  @RequestParam(defaultValue = "")String search
                                     ){
-        Page<Blog> blogs;
-        Pageable pageable = PageRequest.of(page,size, Sort.by("dateCreate"));
-        if(search.isPresent()){
-            blogs = blogService.findAllByTitleContaining(search.get(), pageable);
-        } else {
-            blogs = blogService.findAll(pageable);
-        }
+        Page<Blog> blogs = blogService.findAll(pageable,search);
         ModelAndView modelAndView = new ModelAndView("/blog/list");
         modelAndView.addObject("blogs", blogs);
+        modelAndView.addObject("search", search);
         return modelAndView;
     }
 

@@ -1,6 +1,7 @@
 package com.codegym.ss7_bai2.controller;
 
 
+import com.codegym.ss7_bai2.exception.CommentException;
 import com.codegym.ss7_bai2.model.Comment;
 import com.codegym.ss7_bai2.service.ICommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDate;
@@ -35,17 +33,21 @@ public class CommentController {
     }
 
     @PostMapping
-    public String save(Comment comment) {
+    public String save(Comment comment) throws CommentException {
         comment.setDateCreate(LocalDate.now());
         commentService.saveOrUpdate(comment);
         return "redirect:/home";
     }
 
     @GetMapping("/like/{id}")
-    public String like(@PathVariable("id") int id) {
+    public String like(@PathVariable("id") int id) throws CommentException {
         Comment comment = commentService.findById(id);
         comment.setLikeCount(comment.getLikeCount()+1);
         commentService.saveOrUpdate(comment);
         return "redirect:/home";
+    }
+    @ExceptionHandler(CommentException.class)
+    public String commentException(){
+        return "comment_exception";
     }
 }
