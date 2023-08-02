@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/books">Book list</a>
+<h1>Tickets</h1>
+<br/>
+<table border="1">
+    <tr>
+        <th>Person</th>
+        <th>Card</th>
+        <th>Book</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Detail</th>
+    </tr>
+    <th:block th:each="ticket : ${tickets}">
+        <tr>
+            <td th:text="${ticket.person}"></td>
+            <td th:text="${ticket.card}"></td>
+            <td th:if="${ticket.book}" th:text="${ticket.book.name}"></td>
+            <td th:unless="${ticket.book}"></td>
+            <td><a th:href="@{/edit-ticket/__${ticket.id}__ }">Edit</a></td>
+            <td><a th:href="@{/delete-ticket/__${ticket.id}__ }">Delete</a></td>
+            <td><a th:href="@{/detail-ticket/__${ticket.id}__ }">Detail</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

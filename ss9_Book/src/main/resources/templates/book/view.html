@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View book</title>
+</head>
+<body>
+<h1>View book: <span th:text="${book.name}"></span></h1>
+<a href="/books">Book list</a>
+<table border="1">
+    <tr>
+        <th>Person</th>
+        <th>Card</th>
+    </tr>
+    <th:block th:each="ticket : ${tickets}">
+        <tr>
+            <td th:text="${ticket.person}"></td>
+            <td th:text="${ticket.card}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

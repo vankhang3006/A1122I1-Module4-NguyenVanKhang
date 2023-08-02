@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit ticket</title>
+</head>
+<body>
+<h1>Edit ticket</h1>
+<p>
+    <a href="/tickets">Ticket list</a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<form th:action="@{/edit-ticket}" th:object="${ticket}" method="post">
+    <input th:type="hidden" name="id" th:field="*{id}">
+    <table>
+        <tr>
+            <td>Person:</td>
+            <td><input type="text" th:field="*{person}"/></td>
+        </tr>
+        <tr>
+            <td>Card:</td>
+            <td><input type="text" th:field="*{card}"/></td>
+        </tr>
+        <tr>
+            <td>Book:</td>
+            <td>
+                <select name="book">
+                    <option th:each="b : ${books}"
+                            th:value="${b.id}"
+                            th:text="${b.name}"
+                            th:selected="(${ticket.book}) and (${b.id} == *{book.id})"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update ticket"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit ticket</title>
+</head>
+<body>
+<h1>Ticket Detail</h1>
+<p>
+    <a href="/tickets">Ticket list</a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+    <p hidden th:text="${ticket.id}"></p>
+    <table>
+        <tr>
+            <td><b>Person:</b></td>
+            <td><p th:text="${ticket.person}"></p></td>
+        </tr>
+        <tr>
+            <td><b>Card:</b></td>
+            <td><p th:text="${ticket.card}"></p></td>
+        </tr>
+        <tr>
+            <td><b>Book:</b></td>
+            <td><p th:text="${ticket.book.name}"></p></td>
+        </tr>
+    </table>
+</body>
+</html>

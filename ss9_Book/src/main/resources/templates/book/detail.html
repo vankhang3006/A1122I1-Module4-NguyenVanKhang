@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit book</title>
+</head>
+<body>
+<h1>Book Detail</h1>
+<p>
+    <a href="/books">Book list</a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<p hidden th:text="${book.id}"></p>
+<table>
+    <tr>
+        <td><b>Name:</b></td>
+        <td><p th:text="${book.name}"></p></td>
+    </tr>
+    <tr>
+        <td><b>Writer:</b></td>
+        <td><p th:text="${book.writer}"></p></td>
+    </tr>
+    <tr>
+        <td><b>Description:</b></td>
+        <td><p th:text="${book.description}"></p></td>
+    </tr>
+    <tr>
+        <td><b>Publisher:</b></td>
+        <td><p th:text="${book.publisher}"></p></td>
+    </tr>
+    <tr>
+        <td><b>Date:</b></td>
+        <td><p th:text="${book.date}"></p></td>
+    </tr>
+    <tr>
+        <td><b>Quantity:</b></td>
+        <td><p th:text="${book.quantity}"></p></td>
+    </tr>
+    <tr>
+        <th colspan="2"><a th:href="@{/create-ticket/__${book.id}__ }">Mượn sách</a></th>
+    </tr>
+</table>
+</body>
+</html>
