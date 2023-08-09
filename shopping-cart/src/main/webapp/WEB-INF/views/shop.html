@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <!-- our project just needs Font Awesome Solid + Brands -->
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    a{
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+<body>
+<p style="text-align: right; font-size: 36px" >
+  <a href="/shopping-cart"><i class="fa fa-shopping-cart" ></i>(<span th:text="${cart.countItemQuantity()}"></span>)</a>
+</p>
+<table border="1" class="table table-light table-bordered">
+  <tr style="text-align: center">
+    <th:block th:each="product : ${products}">
+      <td style="width: 20%">
+        <a th:href="@{/detail/__${product.id}__ }"><img width="200px" height="200px" th:src="@{'/image/' + ${product.image}}" alt=""></a>
+        <p th:text="${product.name}"></p>
+        <div>
+          <span th:if="${product.old} != 0" th:text="${product.old} + ' đ'" class="text-decoration-line-through"></span>
+          <span th:text="${product.price} + ' đ'" class="text-danger"></span>
+        </div>
+        <a th:href="@{/add/__${product.id}__(action='list')}">Thêm vào giỏ hàng</a>
+      </td>
+    </th:block>
+  </tr>
+</table>
+<p id="price"></p>
+<script>
+  const VND = new Intl.NumberFormat('vi-VN', {
+    style: 'currency',
+    currency: 'VND',
+  });
+  function formatCurrency(value) {
+    return VND.format(value);
+  }
+  const priceElement = document.getElementById("price");
+  const priceValue = 2000000;
+  const formattedPrice = formatCurrency(priceValue);
+  priceElement.textContent = formattedPrice;
+
+</script>
+</body>
+</html>

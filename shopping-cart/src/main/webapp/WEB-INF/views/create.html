@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Thêm sản phẩm</h3>
+<p>
+    <a th:href="@{/shop}">
+        Shop
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/save}" th:object="${productForm}"
+          method="POST" novalidate="novalidate" enctype="multipart/form-data">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Tên sản phẩm</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <label>Mã sản phẩm</label>
+            <input type="text" th:field="*{card}"/>
+        </div>
+        <div>
+            <label>Giá cũ</label>
+            <input type="text" th:field="*{old}"/>
+        </div>
+        <div>
+            <label>Giá mới</label>
+            <input type="text" th:field="*{price}"/>
+        </div>
+
+        <div>
+            <label>Mô tả</label>
+            <input type="text" th:field="*{description}"/>
+        </div>
+        <div>
+            <label>Hình ảnh</label>
+            <input type="file" th:field="*{image}"/>
+        </div>
+        <input type="submit" value="Thêm"/>
+    </form>
+</div>
+</body>
+</html>
