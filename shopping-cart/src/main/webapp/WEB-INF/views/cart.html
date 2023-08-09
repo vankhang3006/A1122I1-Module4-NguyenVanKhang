@@ -38,15 +38,18 @@
 <form th:action="@{/shop}" th:object="${cart}" method="post">
     <table border="1" class="table table-light table-bordered">
         <tr>
-            <td COLSPAN="2">
+            <td >
                 <h3>GIỎ HÀNG (<span th:text="${cart.countItemQuantity()}"></span>)</h3>
                 <h4>SỐ SẢN PHẨM: <span th:text="${cart.countProductQuantity()}"></span></h4>
             </td>
         </tr>
         <tr th:each="product: ${cart.products}" >
             <td>
-                <div class="img">
+                <div class="img" style="position: relative; display: inline-block;">
                     <img width="200px" height="auto" th:src="@{'/image/' + ${product.getKey().image}}" alt="">
+                    <button class="btn-danger" style="position: absolute; top: 0; left: 0;">
+                        <a th:href="@{/delete/__${product.getKey().id}__}" >X</a>
+                    </button>
                 </div>
                 <div class="content">
                     <h5 th:text="${product.getKey().name}" class="text-danger"></h5>
@@ -55,15 +58,10 @@
                     <label>Đơn giá:</label>&nbsp;&nbsp;&nbsp;&nbsp;&ensp;<b th:text="${product.getKey().price} + ' đ'" ></b></br>
                     <p></p>
                     <label>Số lượng:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a id="decrease_button" th:href="@{/remove/__${product.getKey().id}__}"
-                       th:text="${'-'}"></a>
+                    <a id="decrease_button" class="btn btn-primary" th:href="@{/remove/__${product.getKey().id}__}" th:text="${'-'}" ></a>
                     <span th:text="${product.getValue()}"></span>
-                    <a id="increase_button" th:href="@{/add/__${product.getKey().id}__(action='show')}"
-                       th:text="${'+'}"></a>
+                    <a id="increase_button" class="btn btn-primary" th:href="@{/add/__${product.getKey().id}__(action='show')}" th:text="${'+'}"></a>
                 </div>
-            </td>
-            <td class="center">
-                <a th:href="@{/delete/__${product.getKey().id}__}" >Xoá</a>
             </td>
         </tr>
         <tr>
