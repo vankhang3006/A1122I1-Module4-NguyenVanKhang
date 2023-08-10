@@ -24,30 +24,19 @@
   <tr style="text-align: center">
     <th:block th:each="product : ${products}">
       <td style="width: 20%">
-        <a th:href="@{/detail/__${product.id}__ }"><img width="200px" height="200px" th:src="@{'/image/' + ${product.image}}" alt=""></a>
+        <a th:href="@{/detail/__${product.id}__ }" target="_blank">
+          <img style="width: 200px; height: 200px;" th:src="@{'/image/' + ${product.image}}" alt="">
+        </a>
         <p th:text="${product.name}"></p>
         <div>
           <span th:if="${product.old} != 0" th:text="${product.old} + ' đ'" class="text-decoration-line-through"></span>
           <span th:text="${product.price} + ' đ'" class="text-danger"></span>
         </div>
-        <a th:href="@{/add/__${product.id}__(action='list')}">Thêm vào giỏ hàng</a>
+        <a class="btn btn-primary" th:href="@{/add/__${product.id}__(action='list')}">Thêm vào giỏ hàng</a>
       </td>
     </th:block>
   </tr>
 </table>
-<script>
-  const VND = new Intl.NumberFormat('vi-VN', {
-    style: 'currency',
-    currency: 'VND',
-  });
-  function formatCurrency(value) {
-    return VND.format(value);
-  }
-  const priceElement = document.getElementById("price");
-  const priceValue = 2000000;
-  const formattedPrice = formatCurrency(priceValue);
-  priceElement.textContent = formattedPrice;
 
-</script>
 </body>
 </html>

@@ -8,10 +8,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 
 
 @Repository
 public interface IBlogRepository extends JpaRepository<Blog, Long> {
-    Iterable<Blog> findAllByCategory(Category category);
+    List<Blog> findAllByCategory(Category category);
+    Blog findBlogById(Long id);
     Page<Blog> findBlogByTitleContaining(Pageable pageable, String search);
 }

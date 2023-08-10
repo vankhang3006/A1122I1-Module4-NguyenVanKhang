@@ -52,7 +52,7 @@
         <hr>
         <p th:text="'Giá cũ: '+ ${product.old} + ' đ'" class="text-decoration-line-through"></p>
         Giá mới: <span th:text="${product.price} + ' đ'" class="text-danger"></span></br>
-        <a th:href="@{/add/__${product.id}__(action='list')}">Mua ngay</a>
+        <a class="btn btn-primary" th:href="@{/add/__${product.id}__(action='list')}">Mua ngay</a>
     </div>
 </div>
 <aside>

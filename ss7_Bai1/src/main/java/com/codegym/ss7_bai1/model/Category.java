@@ -1,5 +1,6 @@
 package com.codegym.ss7_bai1.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public class Category {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
     private String name;
-
+    @JsonBackReference
     @OneToMany(targetEntity = Blog.class)
     private List<Blog> blogs;
 

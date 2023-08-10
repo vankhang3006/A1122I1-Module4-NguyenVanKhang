@@ -9,7 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 
-import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,8 +17,13 @@ public class BlogService implements IBlogService{
     @Autowired
     private IBlogRepository blogRepository;
     @Override
-    public Iterable<Blog> findAll() {
+    public List<Blog> findAll() {
         return blogRepository.findAll();
+    }
+
+    @Override
+    public Blog findBlogById(Long id) {
+        return blogRepository.findBlogById(id);
     }
 
     @Override
@@ -37,7 +42,7 @@ public class BlogService implements IBlogService{
     }
 
     @Override
-    public Iterable<Blog> findAllByCategory(Category category) {
+    public List<Blog> findAllByCategory(Category category) {
         return blogRepository.findAllByCategory(category);
     }
 
