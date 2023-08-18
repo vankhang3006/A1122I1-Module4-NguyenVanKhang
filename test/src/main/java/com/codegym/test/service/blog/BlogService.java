@@ -13,6 +13,9 @@ import java.util.Optional;
 
 @Service
 public class BlogService implements IBlogService{
+    public BlogService(IBlogRepository blogRepository) {
+        this.blogRepository = blogRepository;
+    }
     @Autowired
     private IBlogRepository blogRepository;
     @Override
@@ -51,9 +54,16 @@ public class BlogService implements IBlogService{
     }
 
     @Override
-    public Page<Blog> findAll(Pageable pageable, String title) {
-        return blogRepository.findBlogByTitleContaining(pageable,title);
+    public Page<Blog> findByTitleContaining(String title, Pageable pageable) {
+        if (title.isEmpty()) {
+            return blogRepository.findAll(pageable);
+        }
+        return blogRepository.findByTitleContaining(title, pageable);
     }
 
+    @Override
+    public List<Blog> findByTitleContainingOrContentContaining(String q) {
+        return blogRepository.findByTitleContainingOrContentContaining(q,q);
+    }
 
 }

@@ -5,50 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d37e73ff-8c74-4008-a2d5-60747063da4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/config/FilterUTF8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/restful/BlogRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/formatter/CategoryFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/repository/IBlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/repository/ICategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/IGeneralService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/IBlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/category/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/category/ICategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/category/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/category/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/category/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/category/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/category/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/error.404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/PhoneManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/controller/SmartphoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/model/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/service/ISmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/service/SmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../phone-management/src/test/java/com/codegym/phonemanagement/PhoneManagementApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/shopping-cart-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/shopping-cart-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/model/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/repository/IBlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/IGeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/IGeneralService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/blog/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/blog/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/blog/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/blog/IBlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/category/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/category/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/category/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_Bai1/src/main/java/com/codegym/ss7_bai1/service/category/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../test/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/restful/BlogRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/restful/BlogRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +209,12 @@
       <workItem from="1691568448796" duration="7299000" />
       <workItem from="1691625562651" duration="345000" />
       <workItem from="1691626079175" duration="992000" />
-      <workItem from="1691630176332" duration="1830000" />
+      <workItem from="1691630176332" duration="2165000" />
+      <workItem from="1691637165858" duration="3806000" />
+      <workItem from="1691742668698" duration="1981000" />
+      <workItem from="1691933565561" duration="856000" />
+      <workItem from="1692013247562" duration="1394000" />
+      <workItem from="1692114822428" duration="624000" />
     </task>
     <servers />
   </component>

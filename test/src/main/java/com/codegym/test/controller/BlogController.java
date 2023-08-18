@@ -25,8 +25,19 @@ public class BlogController {
     private ICategoryService categoryService;
 
     @ModelAttribute("categorys")
-    public Iterable<Category> categorys(){
+    public Iterable<Category> categorys() {
         return categoryService.findAll();
+    }
+
+
+    @GetMapping("/blogs")
+    public ModelAndView listBlogs(@PageableDefault(size = 2, page = 0, sort = "dateCreate", direction = Sort.Direction.ASC) Pageable pageable,
+                                  @RequestParam(defaultValue = "") String search) {
+        Page<Blog> blogs = blogService.findByTitleContaining(search, pageable);
+        ModelAndView modelAndView = new ModelAndView("/blog/list");
+        modelAndView.addObject("blogs", blogs);
+        modelAndView.addObject("search", search);
+        return modelAndView;
     }
 
 
@@ -44,17 +55,6 @@ public class BlogController {
         ModelAndView modelAndView = new ModelAndView("/blog/create");
         modelAndView.addObject("blog", new Blog());
         modelAndView.addObject("message", "New blog created successfully");
-        return modelAndView;
-    }
-
-    @GetMapping("/blogs")
-    public ModelAndView listBlogs(@PageableDefault(size = 2,page = 0,sort = "dateCreate",direction = Sort.Direction.ASC)Pageable pageable,
-                                  @RequestParam(defaultValue = "")String search
-                                    ){
-        Page<Blog> blogs = blogService.findAll(pageable,search);
-        ModelAndView modelAndView = new ModelAndView("/blog/list");
-        modelAndView.addObject("blogs", blogs);
-        modelAndView.addObject("search", search);
         return modelAndView;
     }
 

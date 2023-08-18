@@ -1,4 +1,4 @@
-package com.codegym.ss9_book;
+package com.codegym.phonemanagement;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(Ss9BookApplication.class);
+        return application.sources(PhoneManagementApplication.class);
     }
 
 }

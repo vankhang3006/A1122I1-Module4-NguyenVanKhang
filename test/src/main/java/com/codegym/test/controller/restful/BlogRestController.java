@@ -2,8 +2,8 @@ package com.codegym.test.controller.restful;
 
 import com.codegym.test.model.Blog;
 import com.codegym.test.model.Category;
+
 import com.codegym.test.service.blog.IBlogService;
-import com.codegym.test.service.category.CategoryService;
 import com.codegym.test.service.category.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -57,5 +57,11 @@ public class BlogRestController {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(blog,HttpStatus.OK);
+    }
+
+
+    @GetMapping
+    public ResponseEntity<List<Blog>> search(@RequestParam String q){
+        return new ResponseEntity<>(blogService.findByTitleContainingOrContentContaining(q), HttpStatus.OK);
     }
 }

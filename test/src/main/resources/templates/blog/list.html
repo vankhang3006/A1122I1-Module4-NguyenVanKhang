@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <a href="/create-blog">Create new blog</a>
 <h1>Blogs</h1>
-<form action="/blogs">
+
+<form action="/blogs" >
     Search by title:
-    <input name="search" type="text" th:value="${search}"/>
+    <input id="search" th:value="${search}" name="search" type="text" />
     <button>Search</button>
 </form>
 <br/>
@@ -37,9 +39,14 @@
     </th:block>
 </table>
 <div style="padding-left: 10%">
-    <a th:if="${blogs.hasPrevious()}" th:href="@{/blogs(page =${blogs.number-1},search=${search})}">Previous</a>
-    <span th:text="${blogs.number+1}"></span>/<span th:text="${blogs.totalPages}"></span>
-    <a th:if="${blogs.hasNext()}" th:href="@{/blogs(page =${blogs.number+1},search=${search})}">Next</a>
+    <a th:if="${blogs.hasPrevious()}" th:href="@{/blogs(page=${blogs.number - 1}, search=${search})}">Previous</a>
+    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+    <a th:if="${blogs.hasNext()}" th:href="@{/blogs(page=${blogs.number + 1}, search=${search})}">Next</a>
 </div>
+<div id="result"></div> <!-- Phần tử để hiển thị kết quả tìm kiếm -->
+<script>
+</script>
 </body>
 </html>
+<!--action="/blogs"-->
+<!--th:value="${search}"-->
