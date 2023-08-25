@@ -15,12 +15,17 @@
     <h1>Danh sách sân</h1>
     <form action="/stadiums" class="form-control">
         Tên:
-        <input id="nameSearch" th:value="${nameSearch}" name="nameSearch" type="text" />
-        Khu vực:
-        <input id="areaSearch" th:value="${areaSearch}" name="areaSearch" type="text" />
-        Loại sân:
-        <input id="peopleSearch" th:value="${peopleSearch}" name="peopleSearch" type="text" />
-        <button>Tìm kiếm</button>
+        <input id="nameSearch" name="nameSearch" type="text" />
+        <select name="areaSearch" id="areaSearch">
+            <option value="">--Khu vực--</option>
+            <option th:each="area : ${areas}" th:value="${area.name}" th:text="${area.name}">
+            </option>
+        </select>
+        <select name="peopleSearch"  id="peopleSearch">
+            <option >--Loại sân--</option>
+            <option th:each="type : ${types}" th:value="${type.peopleAmount}" th:text="${type.peopleAmount}"></option>
+        </select>
+        <button type="button" id="searchButton">Tìm kiếm</button>
     </form>
     <br/>
     <table class="table table-striped">
@@ -44,7 +49,7 @@
                 <td th:unless="${stadium.rentType}"></td>
                 <td th:if="${stadium.rentType}" th:text="${stadium.rentType.price}+' đ'  "></td>
                 <td th:unless="${stadium.rentType}"></td>
-                <td th:if="${stadium.type}" th:text="'sân ' + ${stadium.type.peopleAmount}"></td>
+                <td th:if="${stadium.type}" th:text="${stadium.type.peopleAmount}"></td>
                 <td th:unless="${stadium.type}"></td>
                 <td>
                     <a th:href="@{/detail-stadium/__${stadium.id}__ }" class="btn btn-info">Chi tiết</a>
@@ -57,6 +62,7 @@
         <span th:text="${stadiums.number + 1}"></span>/<span th:text="${stadiums.totalPages}"></span>
         <a class="btn btn-primary" th:if="${stadiums.hasNext()}" th:href="@{/stadiums(page=${stadiums.number + 1}, nameSearch=${nameSearch}, areaSearch=${areaSearch}, peopleSearch=${peopleSearch})}">Next</a>
     </div>
+    <p></p>
     <!-- Thêm modal -->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -88,6 +94,31 @@
             $("#deleteModal").modal("show"); // Mở modal
         });
     });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        var searchButton = document.getElementById("searchButton");
+        var areaSearchSelect = document.getElementById("areaSearch");
+        var peopleSearchSelect = document.getElementById("peopleSearch");
+        var nameSearchInput = document.getElementById("nameSearch");
+
+        searchButton.addEventListener("click", function () {
+        var selectedAreaValue = areaSearchSelect.value;
+        var selectedPeopleValue = peopleSearchSelect.value;
+        var nameSearchValue = nameSearchInput.value;
+
+        // Tạo chuỗi query
+        var queryString = "?nameSearch=" + encodeURIComponent(nameSearchValue) +
+        "&areaSearch=" + encodeURIComponent(selectedAreaValue) +
+        "&peopleSearch=" + encodeURIComponent(selectedPeopleValue);
+
+        // Tạo URL mới với chuỗi query
+        var newURL = "/stadiums" + queryString;
+
+        // Chuyển hướng đến URL mới
+        window.location.href = newURL;
+    });
+    });
+
 </script>
 </body>
 </html>

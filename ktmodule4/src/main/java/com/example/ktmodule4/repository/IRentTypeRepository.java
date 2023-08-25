@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface IRentTypeRepository extends JpaRepository<RentType, Integer> {
     RentType findRentTypeById(int id);
-    @Query("select price from rent_types")
+    @Query("select price from RentType")
     List<Long> findAllPrices();
 }

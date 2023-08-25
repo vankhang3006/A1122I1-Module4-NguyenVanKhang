@@ -55,7 +55,7 @@ public class StadiumService implements IStadiumService{
     }
 
     @Override
-    public Page<Stadium> findByNameContainingAndArea_NameContainingAndType_PeopleAmountContaining(String name, String area, String peopleAmount, Pageable pageable) {
+    public Page<Stadium> findByNameContainingAndArea_NameAndType_PeopleAmount(String name, String area, String peopleAmount, Pageable pageable) {
         return stadiumRepository.findByNameContainingAndArea_NameContainingAndType_PeopleAmountContaining(name, area, peopleAmount, pageable);
     }
 

@@ -10,6 +10,6 @@ public interface IStadiumService extends IGeneralService<Stadium> {
 //    Page<Stadium> findByArea_NameContaining(String name, Pageable pageable);
 //    Page<Stadium> findByType_PeopleAmountContaining(String peopleAmount, Pageable pageable);
     Page<Stadium> findAll(Pageable pageable);
-    Page<Stadium> findByNameContainingAndArea_NameContainingAndType_PeopleAmountContaining(String name, String area, String peopleAmount, Pageable pageable);
+    Page<Stadium> findByNameContainingAndArea_NameAndType_PeopleAmount(String name, String area, String peopleAmount, Pageable pageable);
     boolean isNameUnique(String name);
 }

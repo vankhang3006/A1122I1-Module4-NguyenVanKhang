@@ -63,7 +63,7 @@ public class StadiumController {
                                      @RequestParam(name = "areaSearch",defaultValue = "") String areaSearch,
                                      @RequestParam(name = "peopleSearch",defaultValue = "") String peopleSearch) {
 
-        Page<Stadium> stadiums = stadiumService.findByNameContainingAndArea_NameContainingAndType_PeopleAmountContaining(nameSearch,areaSearch,peopleSearch,pageable);
+        Page<Stadium> stadiums = stadiumService.findByNameContainingAndArea_NameAndType_PeopleAmount(nameSearch,areaSearch,peopleSearch,pageable);
         ModelAndView modelAndView = new ModelAndView("/stadium/list");
         List<String> formatPrices = rentTypeService.priceList();
         modelAndView.addObject("prices", formatPrices);
