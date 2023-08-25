@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách sân bóng</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<a href="/create-stadium" class="btn btn-primary">Thêm sân mới</a>
+<center>
+    <h1>Danh sách sân</h1>
+    <form action="/stadiums" class="form-control">
+        Tên:
+        <input id="nameSearch" th:value="${nameSearch}" name="nameSearch" type="text" />
+        Khu vực:
+        <input id="areaSearch" th:value="${areaSearch}" name="areaSearch" type="text" />
+        Loại sân:
+        <input id="peopleSearch" th:value="${peopleSearch}" name="peopleSearch" type="text" />
+        <button>Tìm kiếm</button>
+    </form>
+    <br/>
+    <table class="table table-striped">
+        <tr>
+            <th>Tên sân</th>
+            <th>Địa chỉ</th>
+            <th>Khu vực</th>
+            <th>Thời gian thuê</th>
+            <th>Giá</th>
+            <th>Loại sân</th>
+            <th>Chức năng</th>
+
+        </tr>
+        <th:block th:each="stadium : ${stadiums}">
+            <tr>
+                <td th:text="${stadium.name}"></td>
+                <td th:text="${stadium.address}"></td>
+                <td th:if="${stadium.area}" th:text="${stadium.area.name}"></td>
+                <td th:unless="${stadium.area}"></td>
+                <td th:if="${stadium.rentType}" th:text="${stadium.rentType.timeRange}"></td>
+                <td th:unless="${stadium.rentType}"></td>
+                <td th:if="${stadium.rentType}" th:text="${stadium.rentType.price}+' đ'  "></td>
+                <td th:unless="${stadium.rentType}"></td>
+                <td th:if="${stadium.type}" th:text="'sân ' + ${stadium.type.peopleAmount}"></td>
+                <td th:unless="${stadium.type}"></td>
+                <td>
+                    <a th:href="@{/detail-stadium/__${stadium.id}__ }" class="btn btn-info">Chi tiết</a>
+                    <a th:attr="data-stadium-id=${stadium.id}, data-stadium-name=${stadium.name}" class="btn btn-danger delete-link" href="#">Xoá</a>
+            </tr>
+        </th:block>
+    </table>
+    <div>
+        <a class="btn btn-primary" th:if="${stadiums.hasPrevious()}" th:href="@{/stadiums(page=${stadiums.number - 1}, nameSearch=${nameSearch}, areaSearch=${areaSearch}, peopleSearch=${peopleSearch})}">Previous</a>
+        <span th:text="${stadiums.number + 1}"></span>/<span th:text="${stadiums.totalPages}"></span>
+        <a class="btn btn-primary" th:if="${stadiums.hasNext()}" th:href="@{/stadiums(page=${stadiums.number + 1}, nameSearch=${nameSearch}, areaSearch=${areaSearch}, peopleSearch=${peopleSearch})}">Next</a>
+    </div>
+    <!-- Thêm modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Xác nhận xoá</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xoá sân <span id="stadiumNameSpan" class="text-danger"></span>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <a id="deleteLink" href="#" class="btn btn-danger">Xoá</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+<script th:inline="javascript">
+    $(document).ready(function() {
+        $(".delete-link").click(function() {
+            var stadiumId = $(this).data("stadium-id");
+            var deleteUrl = "/" + stadiumId + "/delete";
+            var stadiumName = $(this).data("stadium-name");
+            // Cập nhật tên sân trong modal
+            $("#stadiumNameSpan").text(stadiumName);
+            $("#deleteLink").attr("href", deleteUrl); // Cập nhật liên kết xoá trong modal
+            $("#deleteModal").modal("show"); // Mở modal
+        });
+    });
+</script>
+</body>
+</html>

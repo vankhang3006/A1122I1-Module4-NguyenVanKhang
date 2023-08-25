@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết sân bóng</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<center>
+    <body>
+    <h1>Chi tiết sân</h1>
+    <p>
+        <a href="/stadiums">Danh sách sân</a>
+    </p>
+    <th:block th:if="${message}">
+        <p th:text="${message}"></p>
+    </th:block>
+    <p hidden th:text="${stadium.id}"></p>
+    <table class="table table-light">
+        <tr>
+            <td><b>Tên sân:</b></td>
+            <td><p th:text="${stadium.name}"></p></td>
+        </tr>
+        <tr>
+            <td><b>Địa chỉ:</b></td>
+            <td><p th:text="${stadium.address}"></p></td>
+        </tr>
+        <tr>
+            <td><b>Khu vực:</b></td>
+            <td><p th:text="${stadium.area.name}"></p></td>
+        </tr>
+        <tr>
+            <td><b>Khung giờ thuê:</b></td>
+            <td><p th:text="${stadium.rentType.timeRange}"></p></td>
+        </tr>
+        <tr>
+            <td><b>Giá tiền thuê:</b></td>
+            <td><p th:text="${stadium.rentType.price}"></p></td>
+        </tr>
+        <tr>
+            <td><b>Loại sân:</b></td>
+            <td><p th:text="${stadium.type.peopleAmount}"></p></td>
+        </tr>
+    </table>
+    </body>
+</center>
+</html>

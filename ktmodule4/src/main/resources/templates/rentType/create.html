@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create rentType</title>
+</head>
+<body>
+<h1>Tạo kiểu thuê mới </h1>
+<p>
+    <a href="/rentTypes">Danh sách kiểu thuê</a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}" style="color: red"></p>
+</th:block>
+<form th:action="@{/create-rentType}" th:object="${rentType}" method="post">
+    <table>
+        <tr>
+            <td>Khung giờ thuê:</td>
+            <td><input type="text" th:field="*{timeRange}"/></td>
+        </tr>
+        <tr>
+            <td>Giá tiền:</td>
+            <td><input type="text" th:field="*{price}"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Lưu kiểu thuê"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

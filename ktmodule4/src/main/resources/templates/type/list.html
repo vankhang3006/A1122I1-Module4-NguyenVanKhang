@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Types</title>
+</head>
+<body>
+<a href="/create-type">Tạo loại sân mới</a>
+<h1>Danh sách loại sân</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Loại sân</th>
+    </tr>
+    <th:block th:each="type : ${types}">
+        <tr>
+            <td th:text="${type.id}"></td>
+            <td th:text="${type.peopleAmount}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

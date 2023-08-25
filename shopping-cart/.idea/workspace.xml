@@ -5,32 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d37e73ff-8c74-4008-a2d5-60747063da4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../phone-management/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/PhoneManagementApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/controller/SmartphoneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/model/Smartphone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/repository/ISmartphoneRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/service/ISmartphoneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/java/com/codegym/phonemanagement/service/SmartphoneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/main/resources/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phone-management/src/test/java/com/codegym/phonemanagement/PhoneManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/java/com/codegym/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/java/com/codegym/security/SecurityInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/webapp/WEB-INF/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/webapp/WEB-INF/views/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phone-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../phone-management/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phone-management/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../phone-management/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save-user/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../save-user/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save-user/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../save-user/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save-user/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../save-user/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save-user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../save-user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/shopping-cart-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/shopping-cart-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../test/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/restful/BlogRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/controller/restful/BlogRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/repository/IBlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/com/codegym/test/service/blog/IBlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/resources/templates/blog/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +111,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -215,6 +241,9 @@
       <workItem from="1691933565561" duration="856000" />
       <workItem from="1692013247562" duration="1394000" />
       <workItem from="1692114822428" duration="624000" />
+      <workItem from="1692365831200" duration="919000" />
+      <workItem from="1692625825870" duration="894000" />
+      <workItem from="1692715735874" duration="353000" />
     </task>
     <servers />
   </component>

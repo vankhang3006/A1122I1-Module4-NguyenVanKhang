@@ -16,5 +16,6 @@ public interface IBlogService extends IGeneralService<Blog> {
     Blog findBlogById(Long id);
     Page<Blog> findAll(Pageable pageable);
     Page<Blog> findByTitleContaining(String title, Pageable pageable);
+    Page<Blog> findByContentContaining(String content, Pageable pageable);
     List<Blog> findByTitleContainingOrContentContaining(String q);
 }

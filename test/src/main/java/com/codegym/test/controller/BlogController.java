@@ -10,10 +10,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -31,14 +33,27 @@ public class BlogController {
 
 
     @GetMapping("/blogs")
-    public ModelAndView listBlogs(@PageableDefault(size = 2, page = 0, sort = "dateCreate", direction = Sort.Direction.ASC) Pageable pageable,
-                                  @RequestParam(defaultValue = "") String search) {
-        Page<Blog> blogs = blogService.findByTitleContaining(search, pageable);
+    public ModelAndView listBlogs(@PageableDefault(size = 4, page = 0, sort = "dateCreate", direction = Sort.Direction.ASC) Pageable pageable,
+                                  @RequestParam(name = "type",defaultValue = "") String type,
+                                  @RequestParam(name = "search",defaultValue = "") String search) {
+        Page<Blog> blogs ;
+        switch (type){
+            case "title":
+                blogs = blogService.findByTitleContaining(search, pageable);
+                break;
+            case "content":
+                blogs = blogService.findByContentContaining(search, pageable);
+                break;
+            default:
+                blogs = blogService.findAll(pageable);
+        }
         ModelAndView modelAndView = new ModelAndView("/blog/list");
         modelAndView.addObject("blogs", blogs);
+        modelAndView.addObject("type", type);
         modelAndView.addObject("search", search);
         return modelAndView;
     }
+
 
 
     @GetMapping("/create-blog")
@@ -47,6 +62,7 @@ public class BlogController {
         modelAndView.addObject("blog", new Blog());
         return modelAndView;
     }
+
 
     @PostMapping("/create-blog")
     public ModelAndView saveBlog(@ModelAttribute("blog") Blog blog) {
@@ -57,7 +73,6 @@ public class BlogController {
         modelAndView.addObject("message", "New blog created successfully");
         return modelAndView;
     }
-
 
     @GetMapping("/edit-blog/{id}")
     public ModelAndView showEditForm(@PathVariable Long id) {
@@ -100,6 +115,13 @@ public class BlogController {
     public String deleteBlog(@ModelAttribute("blog") Blog blog) {
         blogService.remove(blog.getId());
         return "redirect:blogs";
+    }
+
+    @GetMapping("/detail/{id}")
+    public String detail(Model model, @PathVariable("id") Blog blog){
+//        model.addAttribute("categories", categoryService.findAll());
+        model.addAttribute("blog", blog);
+        return "/blog/detail";
     }
 
     @GetMapping("/detail-blog/{id}")

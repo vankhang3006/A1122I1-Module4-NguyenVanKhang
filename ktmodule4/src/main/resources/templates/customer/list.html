@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách khách hàng</title>
+</head>
+<body>
+<center>
+    <h1>Danh sách khách hàng</h1>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Tên</th>
+            <th>Giới tính</th>
+            <th>Số điện thoại</th>
+        </tr>
+        <th:block th:each="customer : ${customers}">
+            <tr>
+                <td th:text="${customer.id}"></td>
+                <td th:text="${customer.name}"></td>
+                <td th:text="${customer.gender == 1 ? 'Nam' : (customer.gender == 0 ? 'Nữ' : 'Giới tính thứ ba')}"></td>
+                <td th:text="${customer.phoneNumber}"></td>
+            </tr>
+        </th:block>
+    </table>
+</center>
+</body>
+</html>

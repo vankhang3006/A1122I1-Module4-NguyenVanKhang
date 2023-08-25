@@ -38,7 +38,7 @@
         <td th:text="${s.price}"></td>
         <td>
             <button th:data-id="${s.id}" th:data-producer="${s.producer}" th:data-model="${s.model}" th:data-price="${s.price}"
-                    class="btn btn-success edit" data-bs-toggle="modal" data-bs-target="#formModal">Edit</button>
+                    class="btn btn-success edit" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
             <button th:onclick="smartPhoneId.value=[[${s.id}]]" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
         </td>
     </tr>
@@ -48,7 +48,7 @@
 
 <div class="modal fade" id="formModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <form>
+    <form id="formAdd">
         <div class="modal-dialog">
             <div class="modal-content">
                 <input type="hidden" name="id">
@@ -84,7 +84,44 @@
         </div>
     </form>
 </div>
-
+<div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <form>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <input type="hidden" name="editId">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Form SmartPhone</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Producer</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="editProducer">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Model</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="editModel">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Price</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" name="editPrice">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="addNewSmartPhone()" type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
 <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -109,13 +146,14 @@
 <script src="/webjars/bootstrap/5.3.0/js/bootstrap.bundle.js"></script>
 <script>
     function addNewSmartPhone() {
+
         $.ajax({
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             type: "POST",
-            data: JSON.stringify($('form').serializeJSON()),
+            data: JSON.stringify($('#formAdd').serializeJSON()),
             url: "/api/v1/smartphones",
             success: function () {
                 location.reload();
@@ -134,10 +172,10 @@
     }
 
     $(".edit").click(function () {
-        $("input[name='id']").val($(this).data("id"));
-        $("input[name='producer']").val($(this).data("producer"));
-        $("input[name='model']").val($(this).data("model"));
-        $("input[name='price']").val($(this).data("price"));
+        $("input[name='editId']").val($(this).data("id"));
+        $("input[name='editProducer']").val($(this).data("producer"));
+        $("input[name='editModel']").val($(this).data("model"));
+        $("input[name='editPrice']").val($(this).data("price"));
     });
 </script>
 </body>

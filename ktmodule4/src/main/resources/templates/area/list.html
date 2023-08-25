@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Areas</title>
+</head>
+<body>
+<a href="/create-area">Tạo mới khu vực</a>
+<h1>Danh sách khu vực</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Tên khu vực</th>
+    </tr>
+    <th:block th:each="area : ${areas}">
+        <tr>
+            <td th:text="${area.id}"></td>
+            <td th:text="${area.name}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
