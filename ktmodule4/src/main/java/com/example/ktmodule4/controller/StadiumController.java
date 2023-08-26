@@ -59,9 +59,9 @@ public class StadiumController {
 
     @GetMapping("/stadiums")
     public ModelAndView listStadiums(@PageableDefault(size = 3, page = 0,direction = Sort.Direction.ASC) Pageable pageable,
-                                     @RequestParam(name = "nameSearch",defaultValue = "") String nameSearch,
-                                     @RequestParam(name = "areaSearch",defaultValue = "") String areaSearch,
-                                     @RequestParam(name = "peopleSearch",defaultValue = "") String peopleSearch) {
+                                     @RequestParam(name = "nameSearch",defaultValue = "", required = false) String nameSearch,
+                                     @RequestParam(name = "areaSearch",defaultValue = "", required = false) String areaSearch,
+                                     @RequestParam(name = "peopleSearch",defaultValue = "", required = false) String peopleSearch) {
 
         Page<Stadium> stadiums = stadiumService.findByNameContainingAndArea_NameAndType_PeopleAmount(nameSearch,areaSearch,peopleSearch,pageable);
         ModelAndView modelAndView = new ModelAndView("/stadium/list");

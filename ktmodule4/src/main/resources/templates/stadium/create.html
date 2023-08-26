@@ -43,11 +43,13 @@
             <tr>
                 <td><b>Thời gian thuê:</b></td>
                 <td>
-                    <select th:field="*{rentType}">
-                        <option th:each="r : ${rentTypes}" th:value="${r.id}" th:text="${r.timeRange}"></option>
+                    <select th:field="*{rentType}" id="rentTypeSelect">
+                        <option th:each="r : ${rentTypes}" th:value="${r.id}" th:text="${r.timeRange}" th:data-price="${r.price}"></option>
                     </select>
-
+                    <span id="priceDisplay"></span>
                 </td>
+<!--                <td><b>Giá:</b></td>-->
+<!--                <td><span id="priceDisplay">&#45;&#45;</span></td>-->
             </tr>
             <tr>
                 <td><b>Loại sân:</b></td>
@@ -64,6 +66,21 @@
             </tr>
         </table>
     </form>
+    <script th:inline="javascript">
+        var rentTypeSelect = document.getElementById("rentTypeSelect");
+        var priceDisplay = document.getElementById("priceDisplay");
+
+        // Lắng nghe sự kiện thay đổi chọn trong thẻ <select>
+        rentTypeSelect.addEventListener("change", function () {
+            var selectedRentType = rentTypeSelect.options[rentTypeSelect.selectedIndex];
+
+            // Lấy giá trị từ thuộc tính 'data-price' của option đã chọn
+            var price = selectedRentType.getAttribute("data-price");
+
+            // Hiển thị giá trị giá mới
+            priceDisplay.textContent = "Giá: " + price;
+        });
+    </script>
     </body>
 </center>
 

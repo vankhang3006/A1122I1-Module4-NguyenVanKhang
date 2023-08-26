@@ -13,19 +13,18 @@
 <a href="/create-stadium" class="btn btn-primary">Thêm sân mới</a>
 <center>
     <h1>Danh sách sân</h1>
-    <form action="/stadiums" class="form-control">
-        Tên:
-        <input id="nameSearch" name="nameSearch" type="text" />
-        <select name="areaSearch" id="areaSearch">
+    <form action="/stadiums" method="get" class="form-control">
+        Tên: <input id="nameSearch" name="nameSearch" type="text" />
+
+        <select name="areaSearch" >
             <option value="">--Khu vực--</option>
-            <option th:each="area : ${areas}" th:value="${area.name}" th:text="${area.name}">
-            </option>
+            <option th:each="area : ${areas}" th:value="${area.name}" th:text="${area.name}"></option>
         </select>
-        <select name="peopleSearch"  id="peopleSearch">
-            <option >--Loại sân--</option>
+        <select name="peopleSearch" >
+            <option value="">--Loại sân--</option>
             <option th:each="type : ${types}" th:value="${type.peopleAmount}" th:text="${type.peopleAmount}"></option>
         </select>
-        <button type="button" id="searchButton">Tìm kiếm</button>
+        <button type="submit">Tìm kiếm</button>
     </form>
     <br/>
     <table class="table table-striped">
@@ -93,30 +92,6 @@
             $("#deleteLink").attr("href", deleteUrl); // Cập nhật liên kết xoá trong modal
             $("#deleteModal").modal("show"); // Mở modal
         });
-    });
-
-        document.addEventListener("DOMContentLoaded", function () {
-        var searchButton = document.getElementById("searchButton");
-        var areaSearchSelect = document.getElementById("areaSearch");
-        var peopleSearchSelect = document.getElementById("peopleSearch");
-        var nameSearchInput = document.getElementById("nameSearch");
-
-        searchButton.addEventListener("click", function () {
-        var selectedAreaValue = areaSearchSelect.value;
-        var selectedPeopleValue = peopleSearchSelect.value;
-        var nameSearchValue = nameSearchInput.value;
-
-        // Tạo chuỗi query
-        var queryString = "?nameSearch=" + encodeURIComponent(nameSearchValue) +
-        "&areaSearch=" + encodeURIComponent(selectedAreaValue) +
-        "&peopleSearch=" + encodeURIComponent(selectedPeopleValue);
-
-        // Tạo URL mới với chuỗi query
-        var newURL = "/stadiums" + queryString;
-
-        // Chuyển hướng đến URL mới
-        window.location.href = newURL;
-    });
     });
 
 </script>
