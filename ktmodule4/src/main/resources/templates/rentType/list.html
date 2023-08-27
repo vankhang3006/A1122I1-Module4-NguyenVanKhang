@@ -2,24 +2,31 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>RentTypes</title>
+    <title>Danh sách kiểu thuê</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<a href="/create-rentType">Tạo mới khung giờ thuê</a>
-<h1>Danh sách khung giờ thuê</h1>
-<table border="1">
-    <tr>
-        <th>Id</th>
-        <th>Khung giờ cho thuê</th>
-        <th>Giá tiền</th>
-    </tr>
-    <th:block th:each="rentType : ${rentTypes}">
+<a href="/create-rentType" class="btn btn-primary">Tạo mới khung giờ thuê</a>
+<center>
+    <h1>Danh sách khung giờ thuê</h1>
+    <table border="1" class="table table-striped">
         <tr>
-            <td th:text="${rentType.id}"></td>
-            <td th:text="${rentType.timeRange}"></td>
-            <td th:text="${rentType.price}"></td>
+            <th>Id</th>
+            <th>Khung giờ cho thuê</th>
+            <th>Giá tiền</th>
         </tr>
-    </th:block>
-</table>
+        <th:block th:each="rentType : ${rentTypes}">
+            <tr>
+                <td th:text="${rentType.id}"></td>
+                <td th:text="${rentType.timeRange}"></td>
+                <td th:text="${rentType.price}"></td>
+            </tr>
+        </th:block>
+    </table>
+</center>
 </body>
 </html>

@@ -14,13 +14,13 @@
 <center>
     <h1>Danh sách sân</h1>
     <form action="/stadiums" method="get" class="form-control">
-        Tên: <input id="nameSearch" name="nameSearch" type="text" />
+        Tên: <input id="nameSearch" name="nameSearch" type="text" required/>
 
-        <select name="areaSearch" >
+        <select name="areaSearch" style="text-align: center">
             <option value="">--Khu vực--</option>
             <option th:each="area : ${areas}" th:value="${area.name}" th:text="${area.name}"></option>
         </select>
-        <select name="peopleSearch" >
+        <select name="peopleSearch" style="text-align: center" >
             <option value="">--Loại sân--</option>
             <option th:each="type : ${types}" th:value="${type.peopleAmount}" th:text="${type.peopleAmount}"></option>
         </select>
@@ -38,7 +38,7 @@
             <th>Chức năng</th>
 
         </tr>
-        <th:block th:each="stadium : ${stadiums}">
+        <th:block th:each="stadium: ${stadiums}">
             <tr>
                 <td th:text="${stadium.name}"></td>
                 <td th:text="${stadium.address}"></td>
@@ -46,7 +46,9 @@
                 <td th:unless="${stadium.area}"></td>
                 <td th:if="${stadium.rentType}" th:text="${stadium.rentType.timeRange}"></td>
                 <td th:unless="${stadium.rentType}"></td>
-                <td th:if="${stadium.rentType}" th:text="${stadium.rentType.price}+' đ'  "></td>
+                <td th:if="${stadium.rentType}">
+                    <span th:text="${prices[stadium.id]}"></span>
+                </td>
                 <td th:unless="${stadium.rentType}"></td>
                 <td th:if="${stadium.type}" th:text="${stadium.type.peopleAmount}"></td>
                 <td th:unless="${stadium.type}"></td>
@@ -61,7 +63,6 @@
         <span th:text="${stadiums.number + 1}"></span>/<span th:text="${stadiums.totalPages}"></span>
         <a class="btn btn-primary" th:if="${stadiums.hasNext()}" th:href="@{/stadiums(page=${stadiums.number + 1}, nameSearch=${nameSearch}, areaSearch=${areaSearch}, peopleSearch=${peopleSearch})}">Next</a>
     </div>
-    <p></p>
     <!-- Thêm modal -->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog">

@@ -11,7 +11,7 @@ public class Area {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @OneToMany(targetEntity = Stadium.class)
+    @OneToMany(mappedBy = "area")
     private List<Stadium> stadiums;
 
     public Area() {

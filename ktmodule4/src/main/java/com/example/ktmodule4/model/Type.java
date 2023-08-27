@@ -11,7 +11,7 @@ public class Type {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String peopleAmount;
-    @OneToMany(targetEntity = Stadium.class)
+    @OneToMany(mappedBy = "type")
     private List<Stadium> stadiums;
 
     public Type() {

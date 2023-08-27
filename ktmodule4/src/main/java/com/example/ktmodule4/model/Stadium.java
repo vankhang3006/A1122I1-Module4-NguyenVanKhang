@@ -11,7 +11,7 @@ public class Stadium {
     private String name;
     private String address;
     @ManyToOne
-    @JoinColumn(name = "rentType_id")
+    @JoinColumn(name = "rent_type_id")
     private RentType rentType;
     @ManyToOne
     @JoinColumn(name = "type_id")

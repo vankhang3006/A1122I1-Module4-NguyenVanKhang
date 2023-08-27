@@ -26,6 +26,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Controller
@@ -58,14 +59,14 @@ public class StadiumController {
     }
 
     @GetMapping("/stadiums")
-    public ModelAndView listStadiums(@PageableDefault(size = 3, page = 0,direction = Sort.Direction.ASC) Pageable pageable,
+    public ModelAndView listStadiums(@PageableDefault(size = 3, page = 0) Pageable pageable,
                                      @RequestParam(name = "nameSearch",defaultValue = "", required = false) String nameSearch,
                                      @RequestParam(name = "areaSearch",defaultValue = "", required = false) String areaSearch,
                                      @RequestParam(name = "peopleSearch",defaultValue = "", required = false) String peopleSearch) {
 
         Page<Stadium> stadiums = stadiumService.findByNameContainingAndArea_NameAndType_PeopleAmount(nameSearch,areaSearch,peopleSearch,pageable);
         ModelAndView modelAndView = new ModelAndView("/stadium/list");
-        List<String> formatPrices = rentTypeService.priceList();
+        Map<Integer, String> formatPrices = rentTypeService.priceList();
         modelAndView.addObject("prices", formatPrices);
         modelAndView.addObject("stadiums", stadiums);
         modelAndView.addObject("nameSearch", nameSearch);
@@ -92,8 +93,8 @@ public class StadiumController {
             Stadium stadium = new Stadium();
             BeanUtils.copyProperties(stadiumDto,stadium);
             stadiumService.save(stadium);
-            redirectAttributes.addFlashAttribute("message","Thêm mới thành công!!");
-            return "redirect:/stadiums";
+            model.addAttribute("message","Thêm mới thành công!!");
+            return "/stadium/create";
     }
     @GetMapping("/detail-stadium/{id}")
     public ModelAndView showDetailForm(@PathVariable int id) {
@@ -109,6 +110,7 @@ public class StadiumController {
     }
     @GetMapping("/{id}/delete")
     public String delete(@PathVariable int id, Model model) {
+        rentTypeService.priceList().remove(id);
         stadiumService.remove(id);
         return "redirect:/stadiums";
     }

@@ -5,14 +5,14 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "rentTypes")
+@Table(name = "rent_types")
 public class RentType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String timeRange;
     private long price;
-    @OneToMany(targetEntity = Stadium.class)
+    @OneToMany(mappedBy = "rentType")
     private List<Stadium> stadiums;
 
     public RentType() {
