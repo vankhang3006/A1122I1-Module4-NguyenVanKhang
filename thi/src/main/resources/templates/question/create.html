@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mới câu hỏi bóng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<center>
+    <body>
+    <h1>Tạo mới câu hỏi</h1>
+    <p>
+        <a href="/questions">Danh sách câu hỏi</a>
+    </p>
+    <th:block th:if="${message}">
+        <p th:text="${message}" style="color: red"></p>
+    </th:block>
+    <form th:action="@{/create-question}" th:object="${questionDto}" method="post">
+        <table class="table table-light">
+            <tr>
+                <td><b>Tiêu đề:</b></td>
+                <td>
+                    <input type="text" th:field="*{title}" required/>
+                    <small style="color: red" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></small>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Nội dung:</b></td>
+                <td><textarea th:field="*{content}" rows="5" required ></textarea></td>
+                <small style="color: red" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></small>
+            </tr>
+            <tr>
+                <td><b>Loại câu hỏi:</b></td>
+                <td>
+                    <select th:field="*{type}" >
+                        <option value="">--Chọn loại câu hỏi--</option>
+                        <option th:each="t : ${types}" th:value="${t.id}" th:text="${t.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"  value="Tạo câu hỏi" ></td>
+            </tr>
+        </table>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</center>
+
+</html>

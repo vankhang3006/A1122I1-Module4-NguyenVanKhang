@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tạo mới sân bóng</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <center>
     <body>
@@ -60,21 +56,12 @@
 
             <tr>
                 <td></td>
-                <td><input type="submit" value="Tạo sân" ></td>
+                <td><input type="submit"  value="Tạo sân" ></td>
             </tr>
         </table>
     </form>
-    <div class="toast" id="createStadiumToast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <strong class="mr-auto">Thông báo</strong>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="toast-body">
-            <span th:text="${message}" style="color: red"></span>
-        </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script th:inline="javascript">
         var rentTypeSelect = document.getElementById("rentTypeSelect");
         var priceDisplay = document.getElementById("priceDisplay");
@@ -89,31 +76,6 @@
             // Hiển thị giá trị giá mới
             priceDisplay.textContent = "Giá: " + price;
         });
-        // $(document).ready(function() {
-        //     $("#createStadiumForm").submit(function(e) {
-        //         e.preventDefault();
-        //
-        //         var form = $(this);
-        //
-        //         // Perform form submission using AJAX
-        //         $.ajax({
-        //             type: "POST",
-        //             url: form.attr("action"),
-        //             data: form.serialize(),
-        //             success: function(data) {
-        //                 // Update the toast and show it with the returned "message" value
-        //                 var message = $(data).find("#message").text();
-        //                 if (message) {
-        //                     $("#createStadiumToast .toast-body").html(message);
-        //                     $("#createStadiumToast").toast("show");
-        //                 }
-        //             },
-        //             error: function() {
-        //                 // Handle error if needed
-        //             }
-        //         });
-        //     });
-        // });
     </script>
     </body>
 </center>
